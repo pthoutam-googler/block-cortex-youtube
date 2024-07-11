@@ -1,10 +1,6 @@
 view: ad_group_insights_by_ad_format {
   sql_table_name: `kittycorn-dev-epam.looker_reporting_dv360.AdGroupInsightsByAdFormat` ;;
 
-  dimension: active_view_viewable_impressions {
-    type: number
-    sql: ${TABLE}.active_view_viewable_impressions ;;
-  }
   dimension: advertiser {
     type: string
     sql: ${TABLE}.advertiser ;;
@@ -55,6 +51,10 @@ view: ad_group_insights_by_ad_format {
   dimension: line_item_id {
     type: number
     sql: ${TABLE}.line_item_id ;;
+  }
+  dimension: line_item_type {
+    type: string
+    sql: ${TABLE}.line_item_type ;;
   }
   dimension: partner {
     type: string

@@ -1,10 +1,6 @@
 view: line_item_insights {
   sql_table_name: `kittycorn-dev-epam.looker_reporting_dv360.LineItemInsights` ;;
 
-  dimension: active_view_viewable_impressions {
-    type: number
-    sql: ${TABLE}.active_view_viewable_impressions ;;
-  }
   dimension: advertiser {
     type: string
     sql: ${TABLE}.advertiser ;;
@@ -89,6 +85,10 @@ view: line_item_insights {
     convert_tz: no
     datatype: date
     sql: ${TABLE}.line_item_start_date ;;
+  }
+  dimension: line_item_type {
+    type: string
+    sql: ${TABLE}.line_item_type ;;
   }
   dimension: partner {
     type: string

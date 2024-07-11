@@ -52,6 +52,10 @@ view: ad_group_insights_by_audience {
     type: number
     sql: ${TABLE}.line_item_id ;;
   }
+  dimension: line_item_type {
+    type: string
+    sql: ${TABLE}.line_item_type ;;
+  }
   dimension: partner {
     type: string
     sql: ${TABLE}.partner ;;
