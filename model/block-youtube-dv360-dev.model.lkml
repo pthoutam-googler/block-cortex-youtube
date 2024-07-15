@@ -3,7 +3,7 @@ connection: "cortex-youtube"
 #connection: "@{CONNECTION_NAME}"
 
 # include explores and other objects
-#include: "/explores/**/*.explore"
+include: "/explores/**/*.explore"
 include: "/views/**/*.view.lkml"
 #include: "/dashboards/*.dashboard.lookml"
 
