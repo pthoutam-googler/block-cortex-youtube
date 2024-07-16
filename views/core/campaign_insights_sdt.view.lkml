@@ -9,7 +9,7 @@ view: campaign_insights {
         SUM(impressions) AS impressions,
         SUM(clicks) AS clicks,
         SUM(revenue_usd) AS revenue_usd,
-        SUM(youtube_views) AS youtube_views,
+        SUM(youtube_views) AS youtube_views
      FROM
         `kittycorn-dev-epam.looker_reporting_dv360.LineItemInsights`
          where line_item_type='YouTube & partners' or line_item_type= 'Demand Generation'
@@ -121,14 +121,14 @@ view: campaign_insights {
   measure: ctr {
     type: number
     description: "Total number of clicks on your ad divided by the number of people that the ad was served to."
-    sql: SAFE_DIVIDE(${sum_of_clicks},${sum_of_impressions})*100 ;;
+    sql: SAFE_DIVIDE(${sum_of_clicks},${sum_of_impressions}) ;;
     value_format_name:percent_2
   }
 
   measure: vr {
     type: number
     description: "Total number of views of your ad divided by the number of people the ad was served to."
-    sql: SAFE_DIVIDE(${sum_of_trueviews},${sum_of_impressions})*100 ;;
+    sql: SAFE_DIVIDE(${sum_of_trueviews},${sum_of_impressions});;
     value_format_name:percent_2
   }
 
