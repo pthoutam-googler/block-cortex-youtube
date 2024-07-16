@@ -48,14 +48,15 @@ view: +ad_group_insights_by_audience {
     type: number
     description: "The estimated total cost per 1000 impressions."
     sql: SAFE_DIVIDE(${sum_of_cost},${sum_of_impressions})*1000 ;;
-    value_format_name:percent_2
+    value_format_name:usd
   }
 
   measure: cpv {
+    # hidden: yes
     type: number
     description: "The average amount you pay for a view of your ad."
     sql: SAFE_DIVIDE(${sum_of_cost},${sum_of_trueviews}) ;;
-    value_format_name:percent_2
+    value_format_name:usd
   }
 
   measure: ctr {
@@ -76,6 +77,6 @@ view: +ad_group_insights_by_audience {
     type: number
     description: "The cost an advertiser pays for each click."
     sql: SAFE_DIVIDE(${sum_of_cost},${sum_of_clicks}) ;;
-    value_format_name:percent_2
+    value_format_name:usd
   }
 }
