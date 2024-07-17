@@ -39,9 +39,10 @@ view: +line_item_insights {
 
   measure: sum_of_cost {
     type: sum
-    value_format_name: "positive_m_or_k"
+    value_format_name: "positive_usd_m_or_k"
     description: "Revenue refers to the amount of money spent to purchase impressions and deliver ads through Display & Video 360. Revenue is calculated based on the revenue model set for line items."
     sql: ${revenue_usd} ;;
+
   }
 
   measure: cpm {
