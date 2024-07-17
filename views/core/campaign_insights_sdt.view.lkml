@@ -111,7 +111,6 @@ view: campaign_insights {
   }
 
   measure: cpv {
-    # hidden: yes
     type: number
     description: "The average amount you pay for a view of your ad."
     sql: SAFE_DIVIDE(${sum_of_cost},${sum_of_trueviews}) ;;

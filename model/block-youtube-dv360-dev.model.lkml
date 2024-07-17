@@ -8,7 +8,7 @@ include: "/views/**/*.view.lkml"
 #include: "/dashboards/*.dashboard.lookml"
 
 datagroup: youtube_report_default_datagroup {
-  max_cache_age: "5 minute"
+  max_cache_age: "1 hour"
 }
 
 label: "CORTEX YOUTUBE"
