@@ -114,7 +114,7 @@ view: campaign_insights {
     type: number
     description: "The average amount you pay for a view of your ad."
     sql: SAFE_DIVIDE(${sum_of_cost},${sum_of_trueviews}) ;;
-    value_format_name:usd
+    value_format_name:"usd"
   }
 
   measure: ctr {
