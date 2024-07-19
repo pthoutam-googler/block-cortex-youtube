@@ -1,16 +1,16 @@
 
 
 constant: CONNECTION_NAME {
-  value: "connection"
+  value: "cortex-youtube"
   export: override_required
 }
 
 constant: GCP_PROJECT_ID {
-  value: "GCP Project ID"
+  value: "kittycorn-dev-epam"
   export: override_required
 }
 
 constant: REPORTING_DATASET {
-  value: "Reporting Dataset Name"
+  value: "looker_reporting_dv360"
   export: override_required
 }
