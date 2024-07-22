@@ -53,11 +53,10 @@ view: +ad_group_insights_by_audience {
   }
 
   measure: cpv {
-    # hidden: yes
     type: number
     description: "Cost Per View - The cost an advertiser pays for each ad view."
     sql: SAFE_DIVIDE(${sum_of_spend}, ${sum_of_trueview_views}) ;;
-    value_format_name:usd
+    value_format_name:decimal_3
   }
 
   measure: ctr {
