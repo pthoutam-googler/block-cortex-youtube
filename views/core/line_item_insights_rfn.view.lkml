@@ -86,16 +86,6 @@ view: +line_item_insights {
     sql: ${TABLE}.device_type ;;
   }
 
-  # dimension: sorted_devicetype {
-  #   sql: CASE WHEN ${device_type} = "Desktop" THEN 1
-  #       WHEN ${device_type} = "Smart Phone" THEN 2
-  #       WHEN ${device_type} = "Tablet" THEN 3
-  #       WHEN ${device_type} = "Smart TV" THEN 4
-  #       WHEN ${device_type} = "Connected TV" THEN 5
-  #       WHEN ${device_type} = "Unknown" THEN 6
-  #       ELSE 0
-  #       END  ;;
-  # }
   dimension: sorted_devicetype{
     case: {
       when: {
