@@ -40,7 +40,7 @@ view: +line_item_insights {
   measure: sum_of_spend {
     type: sum
     value_format_name: "positive_usd_m_or_k"
-    description: "Revenue refers to the amount of money spent to purchase impressions and deliver ads through Display & Video 360. Revenue is calculated based on the revenue model set for line items."
+    description: "The amount of money spent to purchase impressions and deliver ads through Display & Video 360. Calculated based on the revenue model set for line items. This field is named Revenue in DV360."
     sql: ${revenue_usd} ;;
 
   }
@@ -78,5 +78,47 @@ view: +line_item_insights {
     description: "Cost Per Click - The cost an advertiser pays for each click."
     sql: SAFE_DIVIDE(${sum_of_spend}, ${sum_of_clicks}) ;;
     value_format_name:usd
+  }
+
+  dimension: device_type {
+    type: string
+    description: "The type of device, such as 'Desktop', 'Connected TV', 'Smartphone',  and 'Tablet'."
+    sql: ${TABLE}.device_type ;;
+  }
+
+  # dimension: sorted_devicetype {
+  #   sql: CASE WHEN ${device_type} = "Desktop" THEN 1
+  #       WHEN ${device_type} = "Smart Phone" THEN 2
+  #       WHEN ${device_type} = "Tablet" THEN 3
+  #       WHEN ${device_type} = "Smart TV" THEN 4
+  #       WHEN ${device_type} = "Connected TV" THEN 5
+  #       WHEN ${device_type} = "Unknown" THEN 6
+  #       ELSE 0
+  #       END  ;;
+  # }
+  dimension: sorted_devicetype{
+    case: {
+      when: {
+        sql: ${TABLE}.device_type = "Desktop"  ;;
+        label: "Desktop"
+      }
+      when: {
+        sql: ${TABLE}.device_type = "Smart Phone"  ;;
+        label: "Smart Phone"
+      }
+      when: {
+        sql: ${TABLE}.device_type = "Tablet"  ;;
+        label: "Tablet"
+      }
+      when: {
+        sql: ${TABLE}.device_type = "Smart TV"  ;;
+        label: "Smart TV"
+      }
+      when: {
+        sql: ${TABLE}.device_type = "Connected TV"  ;;
+        label: "Connected TV"
+      }
+      else: "Unknown"
+    }
   }
 }
