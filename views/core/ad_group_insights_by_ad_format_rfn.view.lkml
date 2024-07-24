@@ -79,4 +79,9 @@ view: +ad_group_insights_by_ad_format {
     sql: SAFE_DIVIDE(${sum_of_spend}, ${sum_of_clicks}) ;;
     value_format_name:usd
   }
+
+  dimension: campaign {
+    type: string
+    sql: ${TABLE}.campaign ;;
+  }
 }
