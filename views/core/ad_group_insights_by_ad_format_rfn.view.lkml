@@ -42,7 +42,6 @@ view: +ad_group_insights_by_ad_format {
     value_format_name: "positive_usd_m_or_k"
     description: "Revenue refers to the amount of money spent to purchase impressions and deliver ads through Display & Video 360. Revenue is calculated based on the revenue model set for line items."
     sql: ${revenue_usd} ;;
-
   }
 
   measure: cpm {

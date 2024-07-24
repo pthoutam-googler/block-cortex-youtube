@@ -42,7 +42,6 @@ view: +line_item_insights {
     value_format_name: "positive_usd_m_or_k"
     description: "The amount of money spent to purchase impressions and deliver ads through Display & Video 360. Calculated based on the revenue model set for line items. This field is named Revenue in DV360."
     sql: ${revenue_usd} ;;
-
   }
 
   measure: cpm {
