@@ -12,7 +12,7 @@ view: campaign_insights {
         SUM(youtube_views) AS youtube_views
      FROM
         `kittycorn-dev-epam.looker_reporting_dv360.LineItemInsights`
-         WHERE line_item_type='YouTube & partners' OR line_item_type= 'Demand Generation'
+         WHERE line_item_type = 'YouTube & partners' OR line_item_type = 'Demand Generation'
         GROUP BY
         date,
         advertiser_id,
