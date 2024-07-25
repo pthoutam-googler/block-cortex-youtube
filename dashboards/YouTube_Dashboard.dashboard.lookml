@@ -36,12 +36,12 @@
     col: 0
     width: 6
     height: 2
-  - name: "<h2><strong>What is the overall line item performance?"
+  - name: "<h2><strong>What was the overall line item performance?"
     type: text
-    title_text: "<h2><strong>What is the overall line item performance?"
+    title_text: "<h2><strong>What was the overall line item performance?"
     subtitle_text: ''
     body_text: ''
-    row: 31
+    row: 45
     col: 6
     width: 12
     height: 2
@@ -52,7 +52,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 31
+    row: 45
     col: 0
     width: 6
     height: 2
@@ -63,7 +63,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 31
+    row: 45
     col: 18
     width: 6
     height: 2
@@ -229,7 +229,7 @@
       Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
       Advertiser: line_item_insights.advertiser
-    row: 71
+    row: 73
     col: 0
     width: 24
     height: 13
@@ -359,12 +359,12 @@
     col: 18
     width: 6
     height: 2
-  - name: "<h2><strong>What device did I reach users on?"
+  - name: "<h2><strong>What devices did I reach users on?"
     type: text
-    title_text: "<h2><strong>What device did I reach users on?"
+    title_text: "<h2><strong>What devices did I reach users on?"
     subtitle_text: ''
     body_text: ''
-    row: 84
+    row: 86
     col: 6
     width: 12
     height: 2
@@ -375,7 +375,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 84
+    row: 86
     col: 0
     width: 6
     height: 2
@@ -386,7 +386,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 84
+    row: 86
     col: 18
     width: 6
     height: 2
@@ -466,7 +466,7 @@
       Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
       Advertiser: line_item_insights.advertiser
-    row: 86
+    row: 88
     col: 0
     width: 24
     height: 12
@@ -543,7 +543,7 @@
       Date: ad_group_insights_by_age_gender.date_date
       Campaign: ad_group_insights_by_age_gender.campaign
       Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 100
+    row: 102
     col: 0
     width: 12
     height: 11
@@ -635,7 +635,7 @@
       Date: ad_group_insights_by_age_gender.date_date
       Campaign: ad_group_insights_by_age_gender.campaign
       Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 111
+    row: 113
     col: 12
     width: 12
     height: 11
@@ -712,7 +712,7 @@
       Date: ad_group_insights_by_age_gender.date_date
       Campaign: ad_group_insights_by_age_gender.campaign
       Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 100
+    row: 102
     col: 12
     width: 12
     height: 11
@@ -804,7 +804,7 @@
       Date: ad_group_insights_by_age_gender.date_date
       Campaign: ad_group_insights_by_age_gender.campaign
       Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 111
+    row: 113
     col: 0
     width: 12
     height: 11
@@ -901,7 +901,7 @@
       Date: ad_group_insights_by_audience.date_date
       Campaign: ad_group_insights_by_audience.campaign
       Advertiser: ad_group_insights_by_audience.advertiser
-    row: 124
+    row: 126
     col: 12
     width: 12
     height: 13
@@ -976,7 +976,7 @@
       Date: ad_group_insights_by_audience.date_date
       Campaign: ad_group_insights_by_audience.campaign
       Advertiser: ad_group_insights_by_audience.advertiser
-    row: 124
+    row: 126
     col: 0
     width: 12
     height: 13
@@ -985,7 +985,7 @@
     title_text: "<h2><strong>What was the performance by YouTube ad format?"
     subtitle_text: ''
     body_text: ''
-    row: 137
+    row: 139
     col: 6
     width: 12
     height: 2
@@ -1061,7 +1061,7 @@
       Date: ad_group_insights_by_ad_format.date_date
       Campaign: ad_group_insights_by_ad_format.campaign
       Advertiser: ad_group_insights_by_ad_format.advertiser
-    row: 139
+    row: 141
     col: 0
     width: 12
     height: 12
@@ -1161,7 +1161,7 @@
       Date: ad_group_insights_by_ad_format.date_date
       Campaign: ad_group_insights_by_ad_format.campaign
       Advertiser: ad_group_insights_by_ad_format.advertiser
-    row: 139
+    row: 141
     col: 12
     width: 12
     height: 12
@@ -1172,7 +1172,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 137
+    row: 139
     col: 0
     width: 6
     height: 2
@@ -1183,7 +1183,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 137
+    row: 139
     col: 18
     width: 6
     height: 2
@@ -1253,7 +1253,7 @@
       Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
       Advertiser: line_item_insights.advertiser
-    row: 151
+    row: 153
     col: 0
     width: 24
     height: 10
@@ -1277,7 +1277,7 @@
     defaults_version: 1
     note_state: collapsed
     note_display: hover
-    note_text: Total number of times ads were on screen.
+    note_text: Total number of times the ad was served.
     listen:
       Date: campaign_insights.date
       Campaign: campaign_insights.campaign
@@ -1392,7 +1392,7 @@
     defaults_version: 1
     note_state: collapsed
     note_display: hover
-    note_text: The percentage of time the ad is clicked relative to total impressions.
+    note_text: The number of clicks on the ad divided by the number of impressions.
     listen:
       Date: campaign_insights.date
       Campaign: campaign_insights.campaign
@@ -1462,7 +1462,7 @@
     hidden_pivots: {}
     note_state: collapsed
     note_display: hover
-    note_text: The average cost per view.
+    note_text: The average cost per TrueView view.
     listen:
       Date: campaign_insights.date
       Campaign: campaign_insights.campaign
@@ -1518,8 +1518,7 @@
     defaults_version: 1
     note_state: collapsed
     note_display: hover
-    note_text: The percentage of time the ad is viewed, relative to the total number
-      of impressions.
+    note_text: The number of TrueView views over the number of impressions.
     listen:
       Date: campaign_insights.date
       Campaign: campaign_insights.campaign
@@ -1620,7 +1619,7 @@
       Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
       Advertiser: line_item_insights.advertiser
-    row: 45
+    row: 47
     col: 0
     width: 24
     height: 13
@@ -1712,7 +1711,7 @@
       Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
       Advertiser: line_item_insights.advertiser
-    row: 58
+    row: 60
     col: 0
     width: 24
     height: 13
@@ -1781,7 +1780,7 @@
     title_text: "<h2><strong>What was the performance by audience type?"
     subtitle_text: ''
     body_text: ''
-    row: 122
+    row: 124
     col: 6
     width: 12
     height: 2
@@ -1792,7 +1791,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 98
+    row: 100
     col: 0
     width: 6
     height: 2
@@ -1803,7 +1802,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 122
+    row: 124
     col: 18
     width: 6
     height: 2
@@ -1812,7 +1811,7 @@
     title_text: "<h2><strong>What was the performance by demographic breakdown?"
     subtitle_text: ''
     body_text: ''
-    row: 98
+    row: 100
     col: 6
     width: 12
     height: 2
@@ -1823,7 +1822,7 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 122
+    row: 124
     col: 0
     width: 6
     height: 2
@@ -1834,7 +1833,38 @@
       </body>
     subtitle_text: ''
     body_text: ''
-    row: 98
+    row: 100
+    col: 18
+    width: 6
+    height: 2
+  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
+      </body> (17)
+    type: text
+    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
+      </body>
+    subtitle_text: ''
+    body_text: ''
+    row: 31
+    col: 0
+    width: 6
+    height: 2
+  - name: "<h2><strong>What was the performance by month?"
+    type: text
+    title_text: "<h2><strong>What was the performance by month?"
+    subtitle_text: ''
+    body_text: ''
+    row: 31
+    col: 6
+    width: 12
+    height: 2
+  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
+      </body> (18)
+    type: text
+    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
+      </body>
+    subtitle_text: ''
+    body_text: ''
+    row: 31
     col: 18
     width: 6
     height: 2
