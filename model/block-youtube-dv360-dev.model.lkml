@@ -3,7 +3,7 @@ connection: "@{CONNECTION_NAME}"
 # include explores and other objects
 include: "/explores/**/*.explore"
 include: "/views/**/*.view.lkml"
-#include: "/dashboards/*.dashboard.lookml"
+include: "/dashboards/*.dashboard.lookml"
 
 datagroup: youtube_report_default_datagroup {
   max_cache_age: "1 hour"
