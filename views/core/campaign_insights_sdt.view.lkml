@@ -1,24 +1,24 @@
 view: campaign_insights {
   derived_table: {
-    sql:SELECT
+    sql: SELECT
+          date,
+          campaign_id,
+          campaign,
+          advertiser_id,
+          advertiser,
+          SUM(impressions) AS impressions,
+          SUM(clicks) AS clicks,
+          SUM(revenue_usd) AS revenue_usd,
+          SUM(youtube_views) AS youtube_views
+       FROM
+         `kittycorn-dev-epam.looker_reporting_dv360.LineItemInsights`
+       WHERE line_item_type = 'YouTube & partners' OR line_item_type = 'Demand Generation'
+       GROUP BY
          date,
-         campaign_id,
-         campaign,
          advertiser_id,
          advertiser,
-         SUM(impressions) AS impressions,
-         SUM(clicks) AS clicks,
-         SUM(revenue_usd) AS revenue_usd,
-         SUM(youtube_views) AS youtube_views
-      FROM
-        `kittycorn-dev-epam.looker_reporting_dv360.LineItemInsights`
-      WHERE line_item_type = 'YouTube & partners' OR line_item_type = 'Demand Generation'
-      GROUP BY
-        date,
-        advertiser_id,
-        advertiser,
-        campaign_id,
-        campaign ;;
+         campaign_id,
+         campaign ;;
   }
 
   dimension: campaign_pk {
