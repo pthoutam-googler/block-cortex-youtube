@@ -1335,7 +1335,7 @@
     defaults_version: 1
     note_state: collapsed
     note_display: hover
-    note_text: The number of times the ad has been viewed.
+    note_text: The number of times your ad was viewed for a specific duration depending on ad format.
     listen:
       Date: campaign_insights.date
       Campaign: campaign_insights.campaign
