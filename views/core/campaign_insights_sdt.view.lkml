@@ -19,7 +19,6 @@ view: campaign_insights {
         advertiser,
         campaign_id,
         campaign ;;
-
   }
 
   dimension: campaign_pk {
