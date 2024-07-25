@@ -25,7 +25,7 @@ view: campaign_insights {
     type: number
     primary_key: yes
     hidden: yes
-    sql:${campaign_id};;
+    sql: ${campaign_id};;
   }
 
   dimension: date {
