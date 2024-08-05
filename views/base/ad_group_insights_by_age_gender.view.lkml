@@ -1,5 +1,5 @@
 view: ad_group_insights_by_age_gender {
-  sql_table_name: `kittycorn-dev-epam.looker_reporting_dv360.AdGroupInsightsByAgeGender` ;;
+  sql_table_name: `@{GCP_PROJECT_ID}.@{REPORTING_DATASET}.AdGroupInsightsByAgeGender` ;;
 
   dimension: advertiser {
     type: string

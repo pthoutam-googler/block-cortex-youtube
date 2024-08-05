@@ -1,5 +1,5 @@
 view: line_item_insights {
-  sql_table_name: `kittycorn-dev-epam.looker_reporting_dv360.LineItemInsights` ;;
+  sql_table_name: `@{GCP_PROJECT_ID}.@{REPORTING_DATASET}.LineItemInsights` ;;
 
   dimension: advertiser {
     type: string

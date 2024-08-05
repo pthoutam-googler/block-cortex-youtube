@@ -1,5 +1,5 @@
 view: ad_group_insights_by_audience {
-  sql_table_name: `kittycorn-dev-epam.looker_reporting_dv360.AdGroupInsightsByAudience` ;;
+  sql_table_name: `@{GCP_PROJECT_ID}.@{REPORTING_DATASET}.AdGroupInsightsByAudience` ;;
 
   dimension: advertiser {
     type: string
