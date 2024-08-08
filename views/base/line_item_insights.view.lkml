@@ -28,6 +28,7 @@ view: line_item_insights {
   dimension: clicks {
     type: number
     sql: ${TABLE}.clicks ;;
+    hidden: yes
   }
   dimension: country_code {
     type: string
@@ -55,6 +56,7 @@ view: line_item_insights {
   dimension: impressions {
     type: number
     sql: ${TABLE}.impressions ;;
+    hidden: yes
   }
   dimension: insertion_order {
     type: string
@@ -113,10 +115,12 @@ view: line_item_insights {
   dimension: revenue_usd {
     type: number
     sql: ${TABLE}.revenue_usd ;;
+    hidden: yes
   }
   dimension: youtube_views {
     type: number
     sql: ${TABLE}.youtube_views ;;
+    hidden: yes
   }
   measure: count {
     type: count
