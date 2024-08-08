@@ -57,6 +57,13 @@ view: +line_item_insights {
     sql: ${revenue_usd} ;;
   }
 
+  measure: cumulative_total_spend {
+    type: running_total
+    label: "Cumulative Spend"
+    sql: ${sum_of_spend} ;;
+    value_format_name: "positive_usd_m_or_k"
+  }
+
   measure: sum_of_spend_advertsier_currency {
     type: sum
     value_format_name: "positive_usd_m_or_k"
