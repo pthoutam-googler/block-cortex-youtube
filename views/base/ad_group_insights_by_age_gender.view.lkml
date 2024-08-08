@@ -24,6 +24,7 @@ view: ad_group_insights_by_age_gender {
   dimension: clicks {
     type: number
     sql: ${TABLE}.clicks ;;
+    hidden: yes
   }
   dimension_group: date {
     type: time
@@ -39,6 +40,7 @@ view: ad_group_insights_by_age_gender {
   dimension: impressions {
     type: number
     sql: ${TABLE}.impressions ;;
+    hidden: yes
   }
   dimension: insertion_order {
     type: string
@@ -83,6 +85,7 @@ view: ad_group_insights_by_age_gender {
   dimension: revenue_usd {
     type: number
     sql: ${TABLE}.revenue_usd ;;
+    hidden: yes
   }
   dimension: trueview_ad_group {
     type: string
@@ -103,6 +106,7 @@ view: ad_group_insights_by_age_gender {
   dimension: youtube_views {
     type: number
     sql: ${TABLE}.youtube_views ;;
+    hidden: yes
   }
   measure: count {
     type: count
