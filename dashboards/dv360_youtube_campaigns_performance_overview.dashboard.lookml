@@ -2,7 +2,7 @@
   title: DV360 YouTube campaigns performance overview
   layout: newspaper
   preferred_viewer: dashboards-next
-  description: ''
+  description: ' This dashboard provides a comprehensive overview of your campaign and line items spend, performance and audience targeting with actionable insights for paid media campaigns on YouTube purchased via DV360 platform.'
   preferred_slug: ydmHwD03HiUD1cbizjfOtx
   elements:
   - name: ''
@@ -95,19 +95,6 @@
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
     filters: {}
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total Clicks
-    defaults_version: 1
     hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.sum_of_trueview_views,
       campaign_insights.sum_of_spend, campaign_insights.trueview_vr, campaign_insights.ctr,
       campaign_insights.cpv, campaign_insights.cpm, campaign_insights.cpc]
@@ -130,19 +117,6 @@
     fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total TrueView Views
-    defaults_version: 1
     hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.cpv,
       campaign_insights.trueview_vr, campaign_insights.cpc, campaign_insights.sum_of_clicks,
       campaign_insights.ctr, campaign_insights.sum_of_spend]
@@ -167,19 +141,6 @@
       campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_spend]
     filters: {}
     sorts: [campaign_insights.cpc desc]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total Spend
-    defaults_version: 1
     hidden_fields: [campaign_insights.cpc, campaign_insights.cpm, campaign_insights.cpv,
       campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_impressions,
       campaign_insights.sum_of_trueview_views, campaign_insights.trueview_vr]
@@ -203,19 +164,6 @@
       campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_spend]
     filters: {}
     sorts: [campaign_insights.sum_of_impressions desc]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CTR
-    defaults_version: 1
     hidden_fields: [campaign_insights.sum_of_clicks, campaign_insights.sum_of_impressions,
       campaign_insights.sum_of_spend, campaign_insights.sum_of_trueview_views, campaign_insights.trueview_vr,
       campaign_insights.cpm, campaign_insights.cpc, campaign_insights.cpv]
@@ -238,19 +186,6 @@
     fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CPM
-    defaults_version: 1
     hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.sum_of_trueview_views,
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
@@ -272,20 +207,6 @@
     fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CPV
-    value_format: "$0.000"
-    defaults_version: 1
     hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
       campaign_insights.trueview_vr, campaign_insights.cpc, campaign_insights.sum_of_clicks,
       campaign_insights.ctr, campaign_insights.sum_of_spend]
@@ -309,19 +230,6 @@
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_spend]
     filters: {}
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CPC
-    defaults_version: 1
     hidden_fields: [campaign_insights.cpm, campaign_insights.cpv, campaign_insights.ctr,
       campaign_insights.sum_of_clicks, campaign_insights.sum_of_impressions, campaign_insights.sum_of_spend,
       campaign_insights.sum_of_trueview_views, campaign_insights.trueview_vr]
@@ -343,19 +251,6 @@
     fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
       campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
       campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: TrueView VR
-    defaults_version: 1
     hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
       campaign_insights.cpv, campaign_insights.cpc, campaign_insights.sum_of_clicks,
       campaign_insights.ctr, campaign_insights.sum_of_spend]
@@ -421,14 +316,12 @@
     fill_fields: [line_item_insights.date_month]
     filters: {}
     sorts: [line_item_insights.date_month]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${line_item_insights.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -551,8 +444,6 @@
       line_item_insights.line_item_end_date]
     filters: {}
     sorts: [line_item_insights.line_item_start_date]
-    limit: 500
-    column_limit: 50
     groupBars: true
     labelSize: 9pt
     showLegend: true
@@ -604,7 +495,7 @@
     col: 0
     width: 24
     height: 8
-  - title: New Tile
+  - title:
     name: New Tile
     explore: line_item_insights
     type: looker_line
@@ -612,8 +503,6 @@
     fill_fields: [line_item_insights.date_month]
     filters: {}
     sorts: [line_item_insights.date_month]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: running_total(${line_item_insights.sum_of_spend})
@@ -704,7 +593,7 @@
     col: 0
     width: 24
     height: 9
-  - title: New Tile
+  - title:
     name: New Tile (2)
     explore: line_item_insights
     type: looker_line
@@ -712,14 +601,12 @@
       line_item_insights.cpm, line_item_insights.cpv]
     filters: {}
     sorts: [cpv desc]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${line_item_insights.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -866,14 +753,12 @@
     filters:
       line_item_insights.sum_of_trueview_views: ">0"
     sorts: [line_item_insights.line_item]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${line_item_insights.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -1020,8 +905,6 @@
       line_item_insights.ctr]
     filters: {}
     sorts: [line_item_insights.line_item]
-    limit: 500
-    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -1159,8 +1042,6 @@
     fill_fields: [line_item_insights.sorted_devicetype]
     filters: {}
     sorts: [line_item_insights.sorted_devicetype desc, line_item_insights.line_item]
-    limit: 500
-    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -1265,8 +1146,6 @@
       ad_group_insights_by_age_gender.campaign: ''
       ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
-    limit: 500
-    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -1402,8 +1281,6 @@
       ad_group_insights_by_age_gender.campaign: ''
       ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
-    limit: 500
-    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -1539,14 +1416,12 @@
       ad_group_insights_by_age_gender.campaign: ''
       ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${ad_group_insights_by_age_gender.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -1691,14 +1566,12 @@
       ad_group_insights_by_age_gender.campaign: ''
       ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${ad_group_insights_by_age_gender.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -1841,8 +1714,6 @@
       ad_group_insights_by_audience.campaign: ''
       ad_group_insights_by_audience.date_date: ''
     sorts: [ad_group_insights_by_audience.youtube_audience_segment_type]
-    limit: 500
-    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -1978,14 +1849,12 @@
       ad_group_insights_by_audience.campaign: ''
       ad_group_insights_by_audience.date_date: ''
     sorts: [ad_group_insights_by_audience.youtube_audience_segment_type]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${ad_group_insights_by_audience.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -2132,8 +2001,6 @@
       ad_group_insights_by_ad_format.campaign: ''
       ad_group_insights_by_ad_format.date_date: ''
     sorts: [ad_group_insights_by_ad_format.youtube_ad_format]
-    limit: 500
-    column_limit: 50
     x_axis_gridlines: false
     y_axis_gridlines: true
     show_view_names: false
@@ -2270,14 +2137,12 @@
       ad_group_insights_by_ad_format.campaign: ''
       ad_group_insights_by_ad_format.date_date: ''
     sorts: [ad_group_insights_by_ad_format.youtube_ad_format]
-    limit: 500
-    column_limit: 50
     dynamic_fields:
     - category: table_calculation
       expression: "${ad_group_insights_by_ad_format.cpv}"
       label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
+      value_format:
+      value_format_name: usd_three_decimal
       _kind_hint: measure
       table_calculation: cpv
       _type_hint: number
@@ -2429,8 +2294,6 @@
       line_item_insights.cpc, line_item_insights.ctr, line_item_insights.sum_of_spend]
     filters: {}
     sorts: [line_item_insights.campaign]
-    limit: 500
-    column_limit: 50
     show_view_names: false
     show_row_numbers: true
     transpose: false
@@ -2475,8 +2338,6 @@
         is_active: false
     series_text_format:
       line_item_insights.cpm: {}
-    series_value_format:
-      line_item_insights.cpv: "$0.000"
     defaults_version: 1
     note_state: expanded
     note_display: above
@@ -2489,8 +2350,8 @@
     col: 0
     width: 24
     height: 10
-  - title: New Tile
-    name: New Tile (3)
+  - title: 'Total Impressions'
+    name: 'Total Impressions'
     explore: campaign_insights
     type: single_value
     fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
@@ -2500,19 +2361,6 @@
       campaign_insights.advertiser: Canada Market Sportswear Campaigns
       campaign_insights.campaign: ''
       campaign_insights.date: ''
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total Impressions
-    defaults_version: 1
     note_state: collapsed
     note_display: above
     note_text: Total number of times the ad was served.
