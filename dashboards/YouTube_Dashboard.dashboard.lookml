@@ -1,74 +1,420 @@
+---
 - dashboard: dv360_youtube_campaigns_performance_overview
   title: DV360 YouTube campaigns performance overview
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
-  preferred_slug: AjeZZx7ST98JYqVwI9xdvx
+  preferred_slug: ydmHwD03HiUD1cbizjfOtx
   elements:
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
+  - name: ''
     type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
+    title_text: ''
     subtitle_text: ''
-    body_text: ''
-    row: 0
-    col: 18
-    width: 6
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nOverall Performance</span>\n \n<div style=\"border-bottom:\
+      \ 2px #C0C0C0 inset; width: 100%; position: absolute; \"></div>   \n</div>\n"
+    row: 1
+    col: 0
+    width: 24
     height: 2
-  - name: "<h2><strong>Overall Campaign Performance"
+  - name: " (2)"
     type: text
-    title_text: "<h2><strong>Overall Campaign Performance"
-    subtitle_text: What is the overall campaign performance?
-    body_text: ''
-    row: 0
-    col: 6
-    width: 12
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (2)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
+    title_text: ''
     subtitle_text: ''
-    body_text: ''
-    row: 0
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat was the overall line item performance?</span>\n\
+      \ \n<div style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 39
+    col: 0
+    width: 24
+    height: 2
+  - name: " (3)"
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat Campaign Line Items have run?</span>\n \n<div\
+      \ style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 7
+    col: 0
+    width: 24
+    height: 2
+  - name: " (4)"
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nCumulative Spend</span>\n \n<div style=\"border-bottom:\
+      \ 2px #C0C0C0 inset; width: 100%; position: absolute; \"></div>   \n</div>\n"
+    row: 17
+    col: 0
+    width: 24
+    height: 2
+  - name: " (5)"
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat devices did I reach users on?</span>\n \n<div\
+      \ style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 70
+    col: 0
+    width: 24
+    height: 2
+  - name: " (6)"
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat was the performance by YouTube ad format?</span>\n\
+      \ \n<div style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 123
+    col: 0
+    width: 24
+    height: 2
+  - title: 'Total Clicks'
+    name: 'Total Clicks'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    filters: {}
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: Total Clicks
+    defaults_version: 1
+    hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.sum_of_trueview_views,
+      campaign_insights.sum_of_spend, campaign_insights.trueview_vr, campaign_insights.ctr,
+      campaign_insights.cpv, campaign_insights.cpm, campaign_insights.cpc]
+    hidden_pivots: {}
+    note_state: collapsed
+    note_display: hover
+    note_text: Total number of clicks on the ad.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 5
     col: 0
     width: 6
     height: 2
-  - name: "<h2><strong>What was the overall line item performance?"
-    type: text
-    title_text: "<h2><strong>What was the overall line item performance?"
-    subtitle_text: ''
-    body_text: ''
-    row: 45
+  - title: 'Total TrueView Views'
+    name: 'Total TrueView Views'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: Total TrueView Views
+    defaults_version: 1
+    hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.cpv,
+      campaign_insights.trueview_vr, campaign_insights.cpc, campaign_insights.sum_of_clicks,
+      campaign_insights.ctr, campaign_insights.sum_of_spend]
+    note_state: collapsed
+    note_display: hover
+    note_text: The number of times your ad was viewed for a specific duration depending
+      on ad format.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 5
+    col: 11
+    width: 5
+    height: 2
+  - title: 'Total Spend'
+    name: 'Total Spend'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_spend]
+    filters: {}
+    sorts: [campaign_insights.cpc desc]
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: Total Spend
+    defaults_version: 1
+    hidden_fields: [campaign_insights.cpc, campaign_insights.cpm, campaign_insights.cpv,
+      campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_impressions,
+      campaign_insights.sum_of_trueview_views, campaign_insights.trueview_vr]
+    note_state: collapsed
+    note_display: hover
+    note_text: The total cost of media across the campaigns shown.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 5
+    col: 16
+    width: 8
+    height: 2
+  - title: 'CTR'
+    name: 'CTR'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_spend]
+    filters: {}
+    sorts: [campaign_insights.sum_of_impressions desc]
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: CTR
+    defaults_version: 1
+    hidden_fields: [campaign_insights.sum_of_clicks, campaign_insights.sum_of_impressions,
+      campaign_insights.sum_of_spend, campaign_insights.sum_of_trueview_views, campaign_insights.trueview_vr,
+      campaign_insights.cpm, campaign_insights.cpc, campaign_insights.cpv]
+    hidden_pivots: {}
+    note_state: collapsed
+    note_display: hover
+    note_text: The number of clicks on the ad divided by the number of impressions.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 3
+    col: 11
+    width: 5
+    height: 2
+  - title: 'CPM'
+    name: 'CPM'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: CPM
+    defaults_version: 1
+    hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    note_state: collapsed
+    note_display: hover
+    note_text: The average cost for 1,000 impressions.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 3
     col: 6
-    width: 12
+    width: 5
     height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (3)
+  - title: 'CPV'
+    name: 'CPV'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: CPV
+    value_format: "$0.000"
+    defaults_version: 1
+    hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.trueview_vr, campaign_insights.cpc, campaign_insights.sum_of_clicks,
+      campaign_insights.ctr, campaign_insights.sum_of_spend]
+    hidden_pivots: {}
+    note_state: collapsed
+    note_display: hover
+    note_text: The average cost per TrueView view.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 3
+    col: 16
+    width: 4
+    height: 2
+  - title: 'CPC'
+    name: 'CPC'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.ctr, campaign_insights.sum_of_clicks, campaign_insights.sum_of_spend]
+    filters: {}
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: CPC
+    defaults_version: 1
+    hidden_fields: [campaign_insights.cpm, campaign_insights.cpv, campaign_insights.ctr,
+      campaign_insights.sum_of_clicks, campaign_insights.sum_of_impressions, campaign_insights.sum_of_spend,
+      campaign_insights.sum_of_trueview_views, campaign_insights.trueview_vr]
+    note_state: collapsed
+    note_display: hover
+    note_text: The average cost per click.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 5
+    col: 6
+    width: 5
+    height: 2
+  - title: 'TrueView VR'
+    name: 'TrueView VR'
+    explore: campaign_insights
+    type: single_value
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    limit: 500
+    column_limit: 50
+    custom_color_enabled: true
+    show_single_value_title: true
+    show_comparison: false
+    comparison_type: value
+    comparison_reverse_colors: false
+    show_comparison_label: true
+    enable_conditional_formatting: false
+    conditional_formatting_include_totals: false
+    conditional_formatting_include_nulls: false
+    single_value_title: TrueView VR
+    defaults_version: 1
+    hidden_fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.cpc, campaign_insights.sum_of_clicks,
+      campaign_insights.ctr, campaign_insights.sum_of_spend]
+    note_state: collapsed
+    note_display: hover
+    note_text: The number of TrueView views over the number of impressions.
+    listen:
+      Date: campaign_insights.date
+      Campaign: campaign_insights.campaign
+      Advertiser: campaign_insights.advertiser
+    row: 3
+    col: 20
+    width: 4
+    height: 2
+  - name: " (7)"
     type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
+    title_text: ''
     subtitle_text: ''
-    body_text: ''
-    row: 45
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat was the performance by audience type?</span>\n\
+      \ \n<div style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 101
     col: 0
-    width: 6
+    width: 24
     height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (4)
+  - name: " (8)"
     type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
+    title_text: ''
     subtitle_text: ''
-    body_text: ''
-    row: 45
-    col: 18
-    width: 6
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat was the performance by demographic breakdown?</span>\n\
+      \ \n<div style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 80
+    col: 0
+    width: 24
     height: 2
-  - title: 'Impressions by Month '
-    name: 'Impressions by Month '
+  - name: "<h2><strong>"
+    type: text
+    title_text: "<h2><strong>"
+    subtitle_text: ''
+    body_text: "<div style=\"position: relative; text-align: center; min-height: 40px;\
+      \ padding: 5px;\">\n\n<span style=\"background-color: #FFFFFF; color: #808080;\
+      \ font-size: 120%; font-weight: bold; padding: 0px 30px 0 60px; height: 20px;\
+      \ margin-bottom: 2px;\">\nWhat was the performance by month?</span>\n \n<div\
+      \ style=\"border-bottom: 2px #C0C0C0 inset; width: 100%; position: absolute;\
+      \ \"></div>   \n</div>\n"
+    row: 28
+    col: 0
+    width: 24
+    height: 2
+  - title: ''
+    name: " (9)"
     explore: line_item_insights
     type: looker_line
     fields: [line_item_insights.sum_of_impressions, line_item_insights.date_month,
@@ -103,22 +449,22 @@
     trellis: ''
     stacking: ''
     limit_displayed_rows: false
-    legend_position: center
+    legend_position: left
     point_style: circle
     show_value_labels: true
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
-    show_null_points: true
-    interpolation: linear
+    show_null_points: false
+    interpolation: step
     y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_impressions,
             id: line_item_insights.sum_of_impressions, name: Total Impressions}],
         showLabels: true, showValues: true, unpinAxis: false, tickDensity: default,
         tickDensityCustom: 5, type: linear}, {label: '', orientation: right, series: [
           {axisId: line_item_insights.cpm, id: line_item_insights.cpm, name: CPM}],
         showLabels: true, showValues: true, unpinAxis: false, tickDensity: default,
-        tickDensityCustom: 25, type: linear}, {label: '', orientation: right, series: [
-          {axisId: cpv, id: cpv, name: CPV}], showLabels: true, showValues: true,
+        tickDensityCustom: 25, type: linear}, {label: CPV, orientation: right, series: [
+          {axisId: cpv, id: cpv, name: CPV()}], showLabels: true, showValues: true,
         maxValue: !!null '', unpinAxis: false, tickDensity: default, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
@@ -133,159 +479,134 @@
       line_item_insights.cpv: CPV
       line_item_insights.cpm: CPM
       line_item_insights.sum_of_impressions: Total Impressions
+      cpv: CPV (as applicable)
     series_point_styles:
       line_item_insights.cpm: triangle
     label_color: ["#737d87", "#9334E6", "#7CB342"]
     x_axis_datetime_label: "%b %y"
+    reference_lines: []
+    discontinuous_nulls: true
     advanced_vis_config: |-
       {
-        chart: {},
-        caption: {
-          text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        chart: {
         },
-        series: []
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<table><th style="font-size: 1.8em;text-align: left;">{point.key}</th>',
+              pointFormat: '<tr><th style="text-align: left;color:{point.color};">{series.name}:&nbsp;&nbsp;</th><td style="text-align: right;color:{point.color};" >{point.y:,.0f}</td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<table><th style="font-size: 1.8em;text-align: left;">{point.key}</th>',
+              pointFormat: '<tr><th style="text-align: left;color:{point.color};">{series.name}:&nbsp;&nbsp;</th><td style="text-align: right;" >${point.y:,.2f}</td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<table><th style="font-size: 1.8em;text-align: left;">{point.key}</th>',
+              pointFormat: '<tr><th style="text-align: left;color:{point.color};">{series.name}:&nbsp;&nbsp;</th><td style="text-align: right;" >${point.y:,.3f}</td></tr>',
+              footerFormat: '</table>',
+              shared: true,
+            },
+
+          },
+        ],
+
       }
     defaults_version: 1
     hidden_fields: [line_item_insights.cpv]
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
+    title_hidden: true
     listen:
-      Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
       Advertiser: line_item_insights.advertiser
-    row: 33
+    row: 30
     col: 0
     width: 24
-    height: 12
-  - title: Clicks by YouTube Line Item
-    name: Clicks by YouTube Line Item
+    height: 9
+  - title: YouTube Line Items Calendar
+    name: YouTube Line Items Calendar
     explore: line_item_insights
-    type: looker_column
-    fields: [line_item_insights.line_item, line_item_insights.sum_of_clicks, line_item_insights.cpc,
-      line_item_insights.ctr]
+    type: looker_timeline
+    fields: [line_item_insights.line_item, line_item_insights.line_item_start_date,
+      line_item_insights.line_item_end_date]
     filters: {}
-    sorts: [line_item_insights.line_item]
+    sorts: [line_item_insights.line_item_start_date]
     limit: 500
     column_limit: 50
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: false
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: circle
-    show_value_labels: true
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_clicks,
-            id: line_item_insights.sum_of_clicks, name: Total Clicks}], showLabels: true,
-        showValues: true, unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
-        type: linear}, {label: !!null '', orientation: right, series: [{axisId: line_item_insights.cpc,
-            id: line_item_insights.cpc, name: CPC}], showLabels: true, showValues: true,
-        unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear},
-      {label: !!null '', orientation: right, series: [{axisId: line_item_insights.ctr,
-            id: line_item_insights.ctr, name: CTR}], showLabels: true, showValues: true,
-        maxValue: !!null '', unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
-        type: linear}]
-    x_axis_zoom: true
-    y_axis_zoom: true
-    series_types:
-      line_item_insights.cpc: line
-      line_item_insights.ctr: line
-    series_colors:
-      line_item_insights.sum_of_clicks: "#d1e2f5"
-      line_item_insights.cpc: "#1A73E8"
-    series_labels:
-      line_item_insights.cpc: CPC
-      line_item_insights.ctr: CTR
-      line_item_insights.sum_of_clicks: Total Clicks
-    series_point_styles:
-      line_item_insights.ctr: diamond
-    label_color: ["#737d87", "#1A73E8", "#E52592"]
-    x_axis_label_rotation: 300
+    groupBars: true
+    labelSize: 9pt
+    showLegend: true
+    color_application:
+      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
+      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
+      options:
+        steps: 5
+    valueFormat: dd-mmm-yy
+    advanced_vis_config: |-
+      {
+        chart: {},
+        series: [{}],
+        yAxis: {
+          type: 'datetime',
+          opposite: true,
+          title: {},
+          endOnTick: false,
+          startOnTick: false,
+          labels: {},
+        },
+        tooltip: {
+          animation: false,
+          backgroundColor: 'var(--vis-color-tooltip-background)',
+          borderRadius: 4,
+          borderWidth: 0,
+          followPointer: true,
+          hideDelay: 0,
+          outside: true,
+          padding: 8,
+          pointFormat: '<br/>Line Item: <br/>{point.name}<br/><br/> {point.formattedStart} — {point.formattedEnd}',
+          shadow: false,
+          style: {
+            color: 'white',
+            fontWeight: 400,
+            fontFamily: 'inherit',
+          },
+        },
+      }
     defaults_version: 1
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
     listen:
-      Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
       Advertiser: line_item_insights.advertiser
-    row: 73
+    row: 9
     col: 0
     width: 24
-    height: 13
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (5)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 6
-    col: 18
-    width: 6
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (6)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 6
-    col: 0
-    width: 6
-    height: 2
-  - name: "<h2><strong>What campaigns have run?"
-    type: text
-    title_text: "<h2><strong>What campaigns have run?"
-    subtitle_text: ''
-    body_text: ''
-    row: 6
-    col: 6
-    width: 12
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (7)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 18
-    col: 0
-    width: 6
-    height: 2
-  - name: "<h2><strong>What is the cumulative campaign spend?"
-    type: text
-    title_text: "<h2><strong>What is the cumulative campaign spend?"
-    subtitle_text: ''
-    body_text: ''
-    row: 18
-    col: 6
-    width: 12
-    height: 2
-  - title: Cumulative Monthly Spend
-    name: Cumulative Monthly Spend
+    height: 8
+  - title: New Tile
+    name: New Tile
     explore: line_item_insights
     type: looker_line
     fields: [line_item_insights.date_month, line_item_insights.sum_of_spend]
@@ -320,8 +641,8 @@
     stacking: ''
     limit_displayed_rows: false
     legend_position: center
-    point_style: circle
-    show_value_labels: true
+    point_style: none
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
@@ -334,64 +655,503 @@
     x_axis_zoom: true
     y_axis_zoom: true
     hide_legend: true
+    series_types:
+      cumulative_spend: area
     x_axis_datetime_label: "%b %y"
+    reference_lines: [{reference_type: line, line_value: max, range_start: max, range_end: min,
+        margin_top: deviation, margin_value: mean, margin_bottom: deviation, label_position: right,
+        color: "#000000"}, {reference_type: line, line_value: min, range_start: max,
+        range_end: min, margin_top: deviation, margin_value: mean, margin_bottom: deviation,
+        label_position: left, color: "#000000"}]
+    advanced_vis_config: |-
+      {
+        yAxis: [{
+
+          plotLines: [{
+              color: '#transparent',
+              label: {
+                align: 'right',
+                verticalAlign: 'top',
+                x: -5,
+                y: 2,
+              },
+
+            },
+            {
+              color: '#transparent',
+              label: {
+                align: 'left',
+                verticalAlign: 'bottom',
+                x: 0,
+                y: -1,
+              },
+
+            },
+          ],
+
+        }, ],
+      }
     hidden_fields: [line_item_insights.sum_of_cost, line_item_insights.sum_of_spend]
     defaults_version: 1
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
+    title_hidden: true
     listen:
-      Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
       Advertiser: line_item_insights.advertiser
-    row: 20
+    row: 19
     col: 0
     width: 24
-    height: 11
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (8)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 18
-    col: 18
-    width: 6
-    height: 2
-  - name: "<h2><strong>What devices did I reach users on?"
-    type: text
-    title_text: "<h2><strong>What devices did I reach users on?"
-    subtitle_text: ''
-    body_text: ''
-    row: 86
-    col: 6
-    width: 12
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (9)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 86
+    height: 9
+  - title: New Tile
+    name: New Tile (2)
+    explore: line_item_insights
+    type: looker_line
+    fields: [line_item_insights.line_item, line_item_insights.sum_of_impressions,
+      line_item_insights.cpm, line_item_insights.cpv]
+    filters: {}
+    sorts: [cpv desc]
+    limit: 500
+    column_limit: 50
+    dynamic_fields:
+    - category: table_calculation
+      expression: "${line_item_insights.cpv}"
+      label: CPV
+      value_format: "$0.000"
+      value_format_name: __custom
+      _kind_hint: measure
+      table_calculation: cpv
+      _type_hint: number
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: left
+    point_style: circle
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: false
+    interpolation: step
+    y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_impressions,
+            id: line_item_insights.sum_of_impressions, name: Total Impressions}],
+        showLabels: true, showValues: true, maxValue: !!null '', unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}, {label: !!null '',
+        orientation: right, series: [{axisId: line_item_insights.cpm, id: line_item_insights.cpm,
+            name: CPM}], showLabels: true, showValues: true, maxValue: !!null '',
+        unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear},
+      {label: CPV, orientation: right, series: [{axisId: cpv, id: cpv, name: CPV (
+              Only where applicable )}], showLabels: true, showValues: true, maxValue: !!null '',
+        unpinAxis: false, tickDensity: default, type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    series_types:
+      line_item_insights.sum_of_impressions: column
+    series_colors:
+      line_item_insights.sum_of_impressions: "#e2f2d7"
+      line_item_insights.cpm: "#9334E6"
+      line_item_insights.cpv: "#7CB342"
+      cpv: "#7CB342"
+    series_labels:
+      line_item_insights.sum_of_impressions: Total Impressions
+      line_item_insights.cpm: CPM
+      line_item_insights.cpv: CPV
+      cpv: CPV (as applicable)
+    series_point_styles:
+      line_item_insights.cpm: triangle
+    label_color: ["#737d87", "#9334E6", "#7CB342"]
+    x_axis_label_rotation: 0
+    discontinuous_nulls: true
+    advanced_vis_config: |-
+      {
+        chart: {
+          spacingBottom: 60,
+        },
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        // legend: {
+        //   verticalAlign: 'top',
+        //   align: 'center',
+        //   alignColumns: true,
+        // },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    defaults_version: 1
+    hidden_fields: [line_item_insights.cpv]
+    note_state: expanded
+    note_display: above
+    note_text: "&nbsp;  <br>"
+    title_hidden: true
+    listen:
+      Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
+      Advertiser: line_item_insights.advertiser
+    row: 41
     col: 0
-    width: 6
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (10)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 86
-    col: 18
-    width: 6
-    height: 2
-  - title: Impressions by Device Type
-    name: Impressions by Device Type
+    width: 24
+    height: 10
+  - title: TrueView Views by YouTube Line Item
+    name: TrueView Views by YouTube Line Item
+    explore: line_item_insights
+    type: looker_column
+    fields: [line_item_insights.line_item, line_item_insights.sum_of_trueview_views,
+      line_item_insights.trueview_vr, line_item_insights.cpv]
+    filters:
+      line_item_insights.sum_of_trueview_views: ">0"
+    sorts: [line_item_insights.line_item]
+    limit: 500
+    column_limit: 50
+    dynamic_fields:
+    - category: table_calculation
+      expression: "${line_item_insights.cpv}"
+      label: CPV
+      value_format: "$0.000"
+      value_format_name: __custom
+      _kind_hint: measure
+      table_calculation: cpv
+      _type_hint: number
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: left
+    point_style: circle
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_trueview_views,
+            id: line_item_insights.sum_of_trueview_views, name: Total TrueView Views}],
+        showLabels: true, showValues: true, maxValue: !!null '', unpinAxis: false,
+        tickDensity: default, type: linear}, {label: !!null '', orientation: right,
+        series: [{axisId: line_item_insights.trueview_vr, id: line_item_insights.trueview_vr,
+            name: TrueView VR}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}, {label: '', orientation: right,
+        series: [{axisId: cpv, id: cpv, name: CPV}], showLabels: true, showValues: true,
+        maxValue: !!null '', unpinAxis: false, tickDensity: default, type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    series_types:
+      line_item_insights.cpv: line
+      line_item_insights.trueview_vr: line
+      cpv: line
+    series_colors:
+      line_item_insights.sum_of_trueviews: "#fcdec8"
+      line_item_insights.cpv: "#7CB342"
+      line_item_insights.vr: "#EA4335"
+      line_item_insights.sum_of_trueview_views: "#fcdec8"
+      line_item_insights.trueview_vr: "#EA4335"
+      cpv: "#7CB342"
+    series_labels:
+      line_item_insights.sum_of_trueviews: Total Views
+      line_item_insights.vr: VR
+      line_item_insights.cpv: CPV
+      line_item_insights.trueview_vr: TrueView VR
+      line_item_insights.sum_of_trueview_views: Total TrueView Views
+    series_point_styles:
+      line_item_insights.trueview_vr: triangle
+    label_color: ["#737d87", "#EA4335", "#7CB342"]
+    x_axis_label_rotation: 0
+    show_dropoff: false
+    advanced_vis_config: |-
+      {
+        chart: {
+          spacingBottom: 60,
+        },
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        // legend: {
+        //   verticalAlign: 'top',
+        //   align: 'center',
+        //   alignColumns: true,
+        // },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
+    defaults_version: 1
+    hidden_fields: [line_item_insights.cpv]
+    note_state: expanded
+    note_display: above
+    note_text: "&nbsp;  <br>"
+    listen:
+      Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
+      Advertiser: line_item_insights.advertiser
+    row: 51
+    col: 0
+    width: 24
+    height: 9
+  - title: Clicks by YouTube Line Item
+    name: Clicks by YouTube Line Item
+    explore: line_item_insights
+    type: looker_column
+    fields: [line_item_insights.line_item, line_item_insights.sum_of_clicks, line_item_insights.cpc,
+      line_item_insights.ctr]
+    filters: {}
+    sorts: [line_item_insights.line_item]
+    limit: 500
+    column_limit: 50
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: left
+    point_style: circle
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_clicks,
+            id: line_item_insights.sum_of_clicks, name: Total Clicks}], showLabels: true,
+        showValues: true, unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
+        type: linear}, {label: !!null '', orientation: right, series: [{axisId: line_item_insights.cpc,
+            id: line_item_insights.cpc, name: CPC}], showLabels: true, showValues: true,
+        unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear},
+      {label: !!null '', orientation: right, series: [{axisId: line_item_insights.ctr,
+            id: line_item_insights.ctr, name: CTR}], showLabels: true, showValues: true,
+        maxValue: !!null '', unpinAxis: false, tickDensity: default, tickDensityCustom: 5,
+        type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    series_types:
+      line_item_insights.cpc: line
+      line_item_insights.ctr: line
+    series_colors:
+      line_item_insights.sum_of_clicks: "#d1e2f5"
+      line_item_insights.cpc: "#1A73E8"
+    series_labels:
+      line_item_insights.cpc: CPC
+      line_item_insights.ctr: CTR
+      line_item_insights.sum_of_clicks: Total Clicks
+    series_point_styles:
+      line_item_insights.ctr: diamond
+    label_color: ["#737d87", "#1A73E8", "#E52592"]
+    x_axis_label_rotation: 0
+    advanced_vis_config: |-
+      {
+        chart: {
+          spacingBottom: 60,
+        },
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        // legend: {
+        //   verticalAlign: 'top',
+        //   align: 'center',
+        //   alignColumns: true,
+        // },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
+    defaults_version: 1
+    note_state: expanded
+    note_display: above
+    note_text: "&nbsp;  <br>"
+    listen:
+      Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
+      Advertiser: line_item_insights.advertiser
+    row: 60
+    col: 0
+    width: 24
+    height: 10
+  - title: Impressions by Device Type and YouTube Line Item
+    name: Impressions by Device Type and YouTube Line Item
     explore: line_item_insights
     type: looker_column
     fields: [line_item_insights.line_item, line_item_insights.sum_of_impressions,
@@ -418,7 +1178,7 @@
     trellis: ''
     stacking: normal
     limit_displayed_rows: false
-    legend_position: center
+    legend_position: left
     point_style: none
     show_value_labels: false
     label_density: 25
@@ -435,50 +1195,76 @@
       options:
         steps: 5
         reverse: false
-    y_axes: [{label: Total Impressions, orientation: left, series: [{axisId: Connected
-              TV - line_item_insights.sum_of_impressions, id: Connected TV - line_item_insights.sum_of_impressions,
-            name: Connected TV}, {axisId: Desktop - line_item_insights.sum_of_impressions,
-            id: Desktop - line_item_insights.sum_of_impressions, name: Desktop}, {
-            axisId: Smart Phone - line_item_insights.sum_of_impressions, id: Smart
-              Phone - line_item_insights.sum_of_impressions, name: Smart Phone}, {
-            axisId: Smart TV - line_item_insights.sum_of_impressions, id: Smart TV
-              - line_item_insights.sum_of_impressions, name: Smart TV}, {axisId: Tablet
-              - line_item_insights.sum_of_impressions, id: Tablet - line_item_insights.sum_of_impressions,
-            name: Tablet}, {axisId: Unknown - line_item_insights.sum_of_impressions,
-            id: Unknown - line_item_insights.sum_of_impressions, name: Unknown}],
-        showLabels: true, showValues: true, unpinAxis: false, tickDensity: default,
-        tickDensityCustom: 5, type: linear}]
+    y_axes: [{label: Total Impressions, orientation: left, series: [{axisId: Unknown
+              - 5 - line_item_insights.sum_of_impressions, id: Unknown - 5 - line_item_insights.sum_of_impressions,
+            name: Unknown}, {axisId: Connected TV - 4 - line_item_insights.sum_of_impressions,
+            id: Connected TV - 4 - line_item_insights.sum_of_impressions, name: Connected
+              TV}, {axisId: Smart TV - 3 - line_item_insights.sum_of_impressions,
+            id: Smart TV - 3 - line_item_insights.sum_of_impressions, name: Smart
+              TV}, {axisId: Tablet - 2 - line_item_insights.sum_of_impressions, id: Tablet
+              - 2 - line_item_insights.sum_of_impressions, name: Tablet}, {axisId: Smart
+              Phone - 1 - line_item_insights.sum_of_impressions, id: Smart Phone -
+              1 - line_item_insights.sum_of_impressions, name: Smart Phone}, {axisId: Desktop
+              - 0 - line_item_insights.sum_of_impressions, id: Desktop - 0 - line_item_insights.sum_of_impressions,
+            name: Desktop}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}]
     x_axis_zoom: true
     y_axis_zoom: true
-    series_colors:
-      Smart Phone - line_item_insights.sum_of_impressions: "#E8710A"
-      Smart TV - line_item_insights.sum_of_impressions: "#E52592"
-      Tablet - line_item_insights.sum_of_impressions: "#12B5CB"
-      Desktop - line_item_insights.sum_of_impressions: "#F9AB00"
-      Connected TV - line_item_insights.sum_of_impressions: "#7CB342"
-    x_axis_label_rotation: 300
+    hidden_series: []
+    series_colors: {}
+    x_axis_label_rotation: 0
+    column_group_spacing_ratio: 0.1
+    advanced_vis_config: |-
+      {
+        chart: {
+          spacingBottom: 60,
+        },
+        tooltip: {
+          format: '<table><th style="font-size: 1.8em;text-align: left;">{key}</th></table><table>{#each points}<tr><th style="text-align: left;color:{point.color};">{series.name}:&nbsp;&nbsp;&nbsp;</th><td style="text-align: right;color:{point.color};" >{point.y:,.0f} ({point.percentage:.0f}%)</td></tr>{/each}',
+          footerFormat: '</table>',
+          shared: true
+        },
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
     defaults_version: 1
     hidden_pivots: {}
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
     listen:
-      Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
       Advertiser: line_item_insights.advertiser
-    row: 88
+    row: 72
     col: 0
     width: 24
-    height: 12
+    height: 8
   - title: Impressions by Age Group for Males
     name: Impressions by Age Group for Males
     explore: ad_group_insights_by_age_gender
-    type: looker_column
+    type: looker_line
     fields: [ad_group_insights_by_age_gender.sum_of_impressions, ad_group_insights_by_age_gender.cpm,
       ad_group_insights_by_age_gender.ctr, ad_group_insights_by_age_gender.gender,
       ad_group_insights_by_age_gender.youtube_age]
     filters:
       ad_group_insights_by_age_gender.gender: Male
+      ad_group_insights_by_age_gender.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_age_gender.campaign: ''
+      ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
     limit: 500
     column_limit: 50
@@ -500,15 +1286,12 @@
     limit_displayed_rows: false
     legend_position: center
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
+    show_null_points: true
+    interpolation: step
     y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_age_gender.sum_of_impressions,
             id: ad_group_insights_by_age_gender.sum_of_impressions, name: Total Impressions}],
         showLabels: true, showValues: true, unpinAxis: false, tickDensity: default,
@@ -522,8 +1305,7 @@
     x_axis_zoom: true
     y_axis_zoom: true
     series_types:
-      ad_group_insights_by_age_gender.cpm: line
-      ad_group_insights_by_age_gender.ctr: line
+      ad_group_insights_by_age_gender.sum_of_impressions: column
     series_colors:
       ad_group_insights_by_age_gender.cpm: "#9334E6"
       ad_group_insights_by_age_gender.sum_of_impressions: "#e2f2d7"
@@ -534,120 +1316,92 @@
     series_point_styles:
       ad_group_insights_by_age_gender.cpm: triangle
     label_color: ["#737d87", "#9334E6", "#E52592"]
-    defaults_version: 1
-    hidden_fields: [ad_group_insights_by_age_gender.gender]
-    note_state: expanded
-    note_display: above
-    note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_age_gender.date_date
-      Campaign: ad_group_insights_by_age_gender.campaign
-      Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 102
-    col: 0
-    width: 12
-    height: 11
-  - title: TrueView Views by Age Group for Females
-    name: TrueView Views by Age Group for Females
-    explore: ad_group_insights_by_age_gender
-    type: looker_column
-    fields: [ad_group_insights_by_age_gender.gender, ad_group_insights_by_age_gender.youtube_age,
-      ad_group_insights_by_age_gender.sum_of_trueview_views, ad_group_insights_by_age_gender.trueview_vr,
-      ad_group_insights_by_age_gender.cpv]
-    filters:
-      ad_group_insights_by_age_gender.gender: Female
-    sorts: [ad_group_insights_by_age_gender.youtube_age]
-    limit: 500
-    column_limit: 50
-    dynamic_fields:
-    - category: table_calculation
-      expression: "${ad_group_insights_by_age_gender.cpv}"
-      label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
-      _kind_hint: measure
-      table_calculation: cpv
-      _type_hint: number
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: false
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: circle
-    show_value_labels: true
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
+    advanced_vis_config: |-
+      {
+        chart: {},
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        legend: {
+          verticalAlign: 'bottom',
+          align: 'center',
+          alignColumns: true,
+        },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              angle: 0,
+            },
+          },
+        },
+      }
     ordering: none
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_age_gender.sum_of_trueview_views,
-            id: ad_group_insights_by_age_gender.sum_of_trueview_views, name: Total
-              TrueView Views}], showLabels: true, showValues: true, unpinAxis: false,
-        tickDensity: default, type: linear}, {label: !!null '', orientation: right,
-        series: [{axisId: ad_group_insights_by_age_gender.trueview_vr, id: ad_group_insights_by_age_gender.trueview_vr,
-            name: TrueView VR}], showLabels: true, showValues: true, unpinAxis: false,
-        tickDensity: default, tickDensityCustom: 5, type: linear}, {label: '', orientation: right,
-        series: [{axisId: cpv, id: cpv, name: CPV}], showLabels: true, showValues: true,
-        maxValue: !!null '', unpinAxis: false, tickDensity: default, type: linear}]
-    x_axis_zoom: true
-    y_axis_zoom: true
-    series_types:
-      ad_group_insights_by_age_gender.cpv: line
-      ad_group_insights_by_age_gender.trueview_vr: line
-      cpv: line
-    series_colors:
-      ad_group_insights_by_age_gender.sum_of_trueviews: "#fcdec8"
-      ad_group_insights_by_age_gender.vr: "#EA4335"
-      ad_group_insights_by_age_gender.cpv: "#7CB342"
-      ad_group_insights_by_age_gender.sum_of_trueview_views: "#fcdec8"
-      ad_group_insights_by_age_gender.trueview_vr: "#EA4335"
-      cpv: "#7CB342"
-    series_labels:
-      ad_group_insights_by_age_gender.sum_of_trueviews: Total Views
-      ad_group_insights_by_age_gender.cpv: CPV
-      ad_group_insights_by_age_gender.vr: VR
-      ad_group_insights_by_age_gender.sum_of_trueview_views: Total TrueView Views
-      ad_group_insights_by_age_gender.trueview_vr: TrueView VR
-    series_point_styles:
-      ad_group_insights_by_age_gender.trueview_vr: triangle
-    label_color: ["#737d87", "#EA4335", "#7CB342"]
     defaults_version: 1
-    hidden_fields: [ad_group_insights_by_age_gender.gender, ad_group_insights_by_age_gender.cpv]
+    hidden_fields: [ad_group_insights_by_age_gender.gender]
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_age_gender.date_date
-      Campaign: ad_group_insights_by_age_gender.campaign
-      Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 113
-    col: 12
+    listen: {}
+    row: 82
+    col: 0
     width: 12
-    height: 11
+    height: 10
   - title: Impressions by Age Group for Females
     name: Impressions by Age Group for Females
     explore: ad_group_insights_by_age_gender
-    type: looker_column
+    type: looker_line
     fields: [ad_group_insights_by_age_gender.sum_of_impressions, ad_group_insights_by_age_gender.cpm,
       ad_group_insights_by_age_gender.ctr, ad_group_insights_by_age_gender.gender,
       ad_group_insights_by_age_gender.youtube_age]
     filters:
       ad_group_insights_by_age_gender.gender: Female
+      ad_group_insights_by_age_gender.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_age_gender.campaign: ''
+      ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
     limit: 500
     column_limit: 50
@@ -669,15 +1423,12 @@
     limit_displayed_rows: false
     legend_position: center
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
+    show_null_points: true
+    interpolation: step
     y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_age_gender.sum_of_impressions,
             id: ad_group_insights_by_age_gender.sum_of_impressions, name: Total Impressions}],
         showLabels: true, showValues: true, unpinAxis: false, tickDensity: default,
@@ -691,8 +1442,7 @@
     x_axis_zoom: true
     y_axis_zoom: true
     series_types:
-      ad_group_insights_by_age_gender.cpm: line
-      ad_group_insights_by_age_gender.ctr: line
+      ad_group_insights_by_age_gender.sum_of_impressions: column
     series_colors:
       ad_group_insights_by_age_gender.cpm: "#9334E6"
       ad_group_insights_by_age_gender.sum_of_impressions: "#e2f2d7"
@@ -703,28 +1453,92 @@
     series_point_styles:
       ad_group_insights_by_age_gender.cpm: triangle
     label_color: ["#737d87", "#9334E6", "#E52592"]
+    advanced_vis_config: |-
+      {
+        chart: {},
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        legend: {
+          verticalAlign: 'bottom',
+          align: 'center',
+          alignColumns: true,
+        },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              angle: 0,
+            },
+          },
+        },
+      }
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
     defaults_version: 1
     hidden_fields: [ad_group_insights_by_age_gender.gender]
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_age_gender.date_date
-      Campaign: ad_group_insights_by_age_gender.campaign
-      Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 102
+    listen: {}
+    row: 82
     col: 12
     width: 12
-    height: 11
+    height: 10
   - title: TrueView Views by Age Group for Males
     name: TrueView Views by Age Group for Males
     explore: ad_group_insights_by_age_gender
-    type: looker_column
+    type: looker_line
     fields: [ad_group_insights_by_age_gender.gender, ad_group_insights_by_age_gender.youtube_age,
       ad_group_insights_by_age_gender.sum_of_trueview_views, ad_group_insights_by_age_gender.trueview_vr,
       ad_group_insights_by_age_gender.cpv]
     filters:
       ad_group_insights_by_age_gender.gender: Male
+      ad_group_insights_by_age_gender.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_age_gender.campaign: ''
+      ad_group_insights_by_age_gender.date_date: ''
     sorts: [ad_group_insights_by_age_gender.youtube_age]
     limit: 500
     column_limit: 50
@@ -755,15 +1569,12 @@
     limit_displayed_rows: false
     legend_position: center
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
+    show_null_points: false
+    interpolation: step
     y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_age_gender.sum_of_trueview_views,
             id: ad_group_insights_by_age_gender.sum_of_trueview_views, name: Total
               TrueView Views}], showLabels: true, showValues: true, unpinAxis: false,
@@ -776,9 +1587,7 @@
     x_axis_zoom: true
     y_axis_zoom: true
     series_types:
-      ad_group_insights_by_age_gender.cpv: line
-      ad_group_insights_by_age_gender.trueview_vr: line
-      cpv: line
+      ad_group_insights_by_age_gender.sum_of_trueview_views: column
     series_colors:
       ad_group_insights_by_age_gender.sum_of_trueviews: "#fcdec8"
       ad_group_insights_by_age_gender.vr: "#EA4335"
@@ -795,32 +1604,99 @@
     series_point_styles:
       ad_group_insights_by_age_gender.trueview_vr: triangle
     label_color: ["#737d87", "#EA4335", "#7CB342"]
+    discontinuous_nulls: true
+    advanced_vis_config: |-
+      {
+        chart: {},
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        legend: {
+          verticalAlign: 'bottom',
+          align: 'center',
+          alignColumns: true,
+        },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              angle: 0,
+            },
+          },
+        },
+      }
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
     defaults_version: 1
     hidden_fields: [ad_group_insights_by_age_gender.gender, ad_group_insights_by_age_gender.cpv]
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_age_gender.date_date
-      Campaign: ad_group_insights_by_age_gender.campaign
-      Advertiser: ad_group_insights_by_age_gender.advertiser
-    row: 113
+    listen: {}
+    row: 92
     col: 0
     width: 12
-    height: 11
-  - title: TrueView Views by Audience Segment Type
-    name: TrueView Views by Audience Segment Type
-    explore: ad_group_insights_by_audience
-    type: looker_column
-    fields: [ad_group_insights_by_audience.youtube_audience_segment_type, ad_group_insights_by_audience.sum_of_trueview_views,
-      ad_group_insights_by_audience.trueview_vr, ad_group_insights_by_audience.cpv]
-    filters: {}
-    sorts: [ad_group_insights_by_audience.youtube_audience_segment_type]
+    height: 9
+  - title: TrueView Views by Age Group for Females
+    name: TrueView Views by Age Group for Females
+    explore: ad_group_insights_by_age_gender
+    type: looker_line
+    fields: [ad_group_insights_by_age_gender.gender, ad_group_insights_by_age_gender.youtube_age,
+      ad_group_insights_by_age_gender.sum_of_trueview_views, ad_group_insights_by_age_gender.trueview_vr,
+      ad_group_insights_by_age_gender.cpv]
+    filters:
+      ad_group_insights_by_age_gender.gender: Female
+      ad_group_insights_by_age_gender.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_age_gender.campaign: ''
+      ad_group_insights_by_age_gender.date_date: ''
+    sorts: [ad_group_insights_by_age_gender.youtube_age]
     limit: 500
     column_limit: 50
     dynamic_fields:
     - category: table_calculation
-      expression: "${ad_group_insights_by_audience.cpv}"
+      expression: "${ad_group_insights_by_age_gender.cpv}"
       label: CPV
       value_format: "$0.000"
       value_format_name: __custom
@@ -845,73 +1721,126 @@
     limit_displayed_rows: false
     legend_position: center
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
+    show_null_points: false
+    interpolation: step
+    y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_age_gender.sum_of_trueview_views,
+            id: ad_group_insights_by_age_gender.sum_of_trueview_views, name: Total
+              TrueView Views}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, type: linear}, {label: !!null '', orientation: right,
+        series: [{axisId: ad_group_insights_by_age_gender.trueview_vr, id: ad_group_insights_by_age_gender.trueview_vr,
+            name: TrueView VR}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, tickDensityCustom: 5, type: linear}, {label: '', orientation: right,
+        series: [{axisId: cpv, id: cpv, name: CPV}], showLabels: true, showValues: true,
+        maxValue: !!null '', unpinAxis: false, tickDensity: default, type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    series_types:
+      ad_group_insights_by_age_gender.sum_of_trueview_views: column
+    series_colors:
+      ad_group_insights_by_age_gender.sum_of_trueviews: "#fcdec8"
+      ad_group_insights_by_age_gender.vr: "#EA4335"
+      ad_group_insights_by_age_gender.cpv: "#7CB342"
+      ad_group_insights_by_age_gender.sum_of_trueview_views: "#fcdec8"
+      ad_group_insights_by_age_gender.trueview_vr: "#EA4335"
+      cpv: "#7CB342"
+    series_labels:
+      ad_group_insights_by_age_gender.sum_of_trueviews: Total Views
+      ad_group_insights_by_age_gender.cpv: CPV
+      ad_group_insights_by_age_gender.vr: VR
+      ad_group_insights_by_age_gender.sum_of_trueview_views: Total TrueView Views
+      ad_group_insights_by_age_gender.trueview_vr: TrueView VR
+    series_point_styles:
+      ad_group_insights_by_age_gender.trueview_vr: triangle
+    label_color: ["#737d87", "#EA4335", "#7CB342"]
+    discontinuous_nulls: true
+    advanced_vis_config: |-
+      {
+        chart: {},
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        legend: {
+          verticalAlign: 'bottom',
+          align: 'center',
+          alignColumns: true,
+        },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              angle: 0,
+            },
+          },
+        },
+      }
     ordering: none
     show_null_labels: false
     show_totals_labels: false
     show_silhouette: false
     totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_audience.sum_of_trueview_views,
-            id: ad_group_insights_by_audience.sum_of_trueview_views, name: Total TrueView
-              Views}], showLabels: true, showValues: true, valueFormat: "$0.000",
-        unpinAxis: false, tickDensity: default, type: linear}, {label: !!null '',
-        orientation: right, series: [{axisId: ad_group_insights_by_audience.trueview_vr,
-            id: ad_group_insights_by_audience.trueview_vr, name: TrueView VR}], showLabels: true,
-        showValues: true, unpinAxis: false, tickDensity: default, type: linear}, {
-        label: '', orientation: right, series: [{axisId: cpv, id: cpv, name: CPV}],
-        showLabels: true, showValues: true, maxValue: !!null '', unpinAxis: false,
-        tickDensity: default, type: linear}]
-    x_axis_zoom: true
-    y_axis_zoom: true
-    series_types:
-      ad_group_insights_by_audience.cpv: line
-      ad_group_insights_by_audience.trueview_vr: line
-      cpv: line
-    series_colors:
-      ad_group_insights_by_audience.sum_of_impressions: "#80868B"
-      ad_group_insights_by_audience.sum_of_trueviews: "#fcdec8"
-      ad_group_insights_by_audience.vr: "#EA4335"
-      ad_group_insights_by_audience.cpv: "#7CB342"
-      ad_group_insights_by_audience.sum_of_trueview_views: "#fcdec8"
-      ad_group_insights_by_audience.trueview_vr: "#EA4335"
-      cpv: "#7CB342"
-    series_labels:
-      ad_group_insights_by_audience.sum_of_impressions: Total Impressions
-      ad_group_insights_by_audience.cpm: CPM
-      ad_group_insights_by_audience.ctr: CTR
-      ad_group_insights_by_audience.sum_of_trueviews: Total Views
-      ad_group_insights_by_audience.cpv: CPV
-      ad_group_insights_by_audience.vr: VR
-      ad_group_insights_by_audience.sum_of_trueview_views: Total TrueView Views
-      ad_group_insights_by_audience.trueview_vr: TrueView VR
-    series_point_styles:
-      ad_group_insights_by_audience.trueview_vr: triangle
-    label_color: ["#737d87", "#EA4335", "#7CB342"]
-    x_axis_label_rotation: 300
     defaults_version: 1
-    hidden_pivots: {}
-    hidden_fields: [ad_group_insights_by_audience.cpv]
+    hidden_fields: [ad_group_insights_by_age_gender.gender, ad_group_insights_by_age_gender.cpv]
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_audience.date_date
-      Campaign: ad_group_insights_by_audience.campaign
-      Advertiser: ad_group_insights_by_audience.advertiser
-    row: 126
+    listen: {}
+    row: 92
     col: 12
     width: 12
-    height: 13
+    height: 9
   - title: Impressions by Audience Segment Type
     name: Impressions by Audience Segment Type
     explore: ad_group_insights_by_audience
     type: looker_column
     fields: [ad_group_insights_by_audience.youtube_audience_segment_type, ad_group_insights_by_audience.sum_of_impressions,
       ad_group_insights_by_audience.cpm, ad_group_insights_by_audience.ctr]
-    filters: {}
+    filters:
+      ad_group_insights_by_audience.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_audience.campaign: ''
+      ad_group_insights_by_audience.date_date: ''
     sorts: [ad_group_insights_by_audience.youtube_audience_segment_type]
     limit: 500
     column_limit: 50
@@ -931,9 +1860,9 @@
     trellis: ''
     stacking: ''
     limit_displayed_rows: false
-    legend_position: center
+    legend_position: left
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
@@ -967,35 +1896,242 @@
     series_point_styles:
       ad_group_insights_by_audience.cpm: triangle
     label_color: ["#737d87", "#9334E6", "#E52592"]
-    x_axis_label_rotation: 300
+    x_axis_label_rotation: 0
+    advanced_vis_config: |-
+      {
+        chart: {
+          spacingBottom: 60,
+        },
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        // legend: {
+        //   verticalAlign: 'bottom',
+        //   align: 'center',
+        //   alignColumns: true,
+        // },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
     defaults_version: 1
     note_state: expanded
     note_display: above
     note_text: "&nbsp; <br>"
-    listen:
-      Date: ad_group_insights_by_audience.date_date
-      Campaign: ad_group_insights_by_audience.campaign
-      Advertiser: ad_group_insights_by_audience.advertiser
-    row: 126
+    listen: {}
+    row: 103
     col: 0
-    width: 12
-    height: 13
-  - name: "<h2><strong>What was the performance by YouTube ad format?"
-    type: text
-    title_text: "<h2><strong>What was the performance by YouTube ad format?"
-    subtitle_text: ''
-    body_text: ''
-    row: 139
-    col: 6
-    width: 12
-    height: 2
+    width: 24
+    height: 10
+  - title: TrueView Views by Audience Segment Type
+    name: TrueView Views by Audience Segment Type
+    explore: ad_group_insights_by_audience
+    type: looker_line
+    fields: [ad_group_insights_by_audience.youtube_audience_segment_type, ad_group_insights_by_audience.sum_of_trueview_views,
+      ad_group_insights_by_audience.trueview_vr, ad_group_insights_by_audience.cpv]
+    filters:
+      ad_group_insights_by_audience.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_audience.campaign: ''
+      ad_group_insights_by_audience.date_date: ''
+    sorts: [ad_group_insights_by_audience.youtube_audience_segment_type]
+    limit: 500
+    column_limit: 50
+    dynamic_fields:
+    - category: table_calculation
+      expression: "${ad_group_insights_by_audience.cpv}"
+      label: CPV
+      value_format: "$0.000"
+      value_format_name: __custom
+      _kind_hint: measure
+      table_calculation: cpv
+      _type_hint: number
+    x_axis_gridlines: false
+    y_axis_gridlines: true
+    show_view_names: false
+    show_y_axis_labels: true
+    show_y_axis_ticks: true
+    y_axis_tick_density: default
+    y_axis_tick_density_custom: 5
+    show_x_axis_label: false
+    show_x_axis_ticks: true
+    y_axis_scale_mode: linear
+    x_axis_reversed: false
+    y_axis_reversed: false
+    plot_size_by_field: false
+    trellis: ''
+    stacking: ''
+    limit_displayed_rows: false
+    legend_position: left
+    point_style: circle
+    show_value_labels: false
+    label_density: 25
+    x_axis_scale: auto
+    y_axis_combined: true
+    show_null_points: false
+    interpolation: step
+    y_axes: [{label: '', orientation: left, series: [{axisId: ad_group_insights_by_audience.sum_of_trueview_views,
+            id: ad_group_insights_by_audience.sum_of_trueview_views, name: Total TrueView
+              Views}], showLabels: true, showValues: true, valueFormat: '', unpinAxis: false,
+        tickDensity: default, type: linear}, {label: !!null '', orientation: right,
+        series: [{axisId: ad_group_insights_by_audience.trueview_vr, id: ad_group_insights_by_audience.trueview_vr,
+            name: TrueView VR}], showLabels: true, showValues: true, unpinAxis: false,
+        tickDensity: default, type: linear}, {label: '', orientation: right, series: [
+          {axisId: cpv, id: cpv, name: CPV}], showLabels: true, showValues: true,
+        maxValue: !!null '', unpinAxis: false, tickDensity: default, type: linear}]
+    x_axis_zoom: true
+    y_axis_zoom: true
+    series_types:
+      ad_group_insights_by_audience.sum_of_trueview_views: column
+    series_colors:
+      ad_group_insights_by_audience.sum_of_impressions: "#80868B"
+      ad_group_insights_by_audience.sum_of_trueviews: "#fcdec8"
+      ad_group_insights_by_audience.vr: "#EA4335"
+      ad_group_insights_by_audience.cpv: "#7CB342"
+      ad_group_insights_by_audience.sum_of_trueview_views: "#fcdec8"
+      ad_group_insights_by_audience.trueview_vr: "#EA4335"
+      cpv: "#7CB342"
+    series_labels:
+      ad_group_insights_by_audience.sum_of_impressions: Total Impressions
+      ad_group_insights_by_audience.cpm: CPM
+      ad_group_insights_by_audience.ctr: CTR
+      ad_group_insights_by_audience.sum_of_trueviews: Total Views
+      ad_group_insights_by_audience.cpv: CPV
+      ad_group_insights_by_audience.vr: VR
+      ad_group_insights_by_audience.sum_of_trueview_views: Total TrueView Views
+      ad_group_insights_by_audience.trueview_vr: TrueView VR
+    series_point_styles:
+      ad_group_insights_by_audience.trueview_vr: triangle
+    label_color: ["#737d87", "#EA4335", "#7CB342"]
+    x_axis_label_rotation: 0
+    discontinuous_nulls: true
+    advanced_vis_config: |-
+      {
+        chart: {
+          spacingBottom: 60,
+        },
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
+    ordering: none
+    show_null_labels: false
+    show_totals_labels: false
+    show_silhouette: false
+    totals_color: "#808080"
+    defaults_version: 1
+    hidden_pivots: {}
+    hidden_fields: [ad_group_insights_by_audience.cpv]
+    note_state: expanded
+    note_display: above
+    note_text: "&nbsp;  <br>"
+    listen: {}
+    row: 113
+    col: 0
+    width: 24
+    height: 10
   - title: Impressions by YouTube Ad Format
     name: Impressions by YouTube Ad Format
     explore: ad_group_insights_by_ad_format
     type: looker_column
     fields: [ad_group_insights_by_ad_format.youtube_ad_format, ad_group_insights_by_ad_format.sum_of_impressions,
       ad_group_insights_by_ad_format.cpm, ad_group_insights_by_ad_format.ctr]
-    filters: {}
+    filters:
+      ad_group_insights_by_ad_format.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_ad_format.campaign: ''
+      ad_group_insights_by_ad_format.date_date: ''
     sorts: [ad_group_insights_by_ad_format.youtube_ad_format]
     limit: 500
     column_limit: 50
@@ -1017,7 +2153,7 @@
     limit_displayed_rows: false
     legend_position: center
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
@@ -1052,19 +2188,77 @@
     series_point_styles:
       ad_group_insights_by_ad_format.cpm: triangle
     label_color: ["#737d87", "#9334E6", "#E52592"]
-    x_axis_label_rotation: 300
+    x_axis_label_rotation: 0
+    advanced_vis_config: |-
+      {
+        chart: {},
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        legend: {
+          verticalAlign: 'bottom',
+          align: 'center',
+          alignColumns: true,
+          padding:30
+        },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
     defaults_version: 1
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_ad_format.date_date
-      Campaign: ad_group_insights_by_ad_format.campaign
-      Advertiser: ad_group_insights_by_ad_format.advertiser
-    row: 141
+    listen: {}
+    row: 125
     col: 0
     width: 12
-    height: 12
+    height: 9
   - title: TrueView Views by YouTube Ad Format
     name: TrueView Views by YouTube Ad Format
     explore: ad_group_insights_by_ad_format
@@ -1073,6 +2267,9 @@
       ad_group_insights_by_ad_format.trueview_vr, ad_group_insights_by_ad_format.cpv]
     filters:
       ad_group_insights_by_ad_format.sum_of_trueview_views: ">0"
+      ad_group_insights_by_ad_format.advertiser: Canada Market Sportswear Campaigns
+      ad_group_insights_by_ad_format.campaign: ''
+      ad_group_insights_by_ad_format.date_date: ''
     sorts: [ad_group_insights_by_ad_format.youtube_ad_format]
     limit: 500
     column_limit: 50
@@ -1103,7 +2300,7 @@
     limit_displayed_rows: false
     legend_position: center
     point_style: circle
-    show_value_labels: true
+    show_value_labels: false
     label_density: 25
     x_axis_scale: auto
     y_axis_combined: true
@@ -1150,43 +2347,79 @@
     series_point_styles:
       ad_group_insights_by_ad_format.trueview_vr: triangle
     label_color: ["#737d87", "#EA4335", "#7CB342"]
-    x_axis_label_rotation: 300
+    x_axis_label_rotation: 0
+    advanced_vis_config: |-
+      {
+        chart: {},
+        // caption: {
+        //   text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
+        // },
+        legend: {
+          verticalAlign: 'bottom',
+          align: 'center',
+          alignColumns: true,
+          padding:30
+        },
+        tooltip: {
+          shared: true,
+          formatter: null,
+          crosshairs: true,
+        },
+        series: [{
+            dataLabels: true,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> {point.y:,.0f}<br/>',
+              shared: true,
+            },
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.2f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+          },
+          {
+            dataLabels: false,
+            tooltip: {
+              headerFormat: '<span style="font-size: 1.8em">{point.key}</span><br/>',
+              pointFormat: '<span style="color:{point.color}">\u25CF <b>{series.name}:</b> </span> ${point.y:,.3f}<br/>',
+              shared: true,
+            },
+            lineWidth: 1,
+
+          },
+        ],
+        xAxis: {
+          allowDecimals: false,
+          gridLineColor: '#e6e6e6',
+          gridLineWidth: 0,
+          keepOrder: true,
+          labels: {
+            style: {
+              cursor: 'pointer',
+              fontSize: '12px',
+              color: 'inherit',
+              textOverflow: 'none',
+              angle: 0,
+            },
+          },
+        },
+      }
     defaults_version: 1
     hidden_pivots: {}
     hidden_fields: [ad_group_insights_by_ad_format.cpv]
     note_state: expanded
     note_display: above
     note_text: "&nbsp;  <br>"
-    listen:
-      Date: ad_group_insights_by_ad_format.date_date
-      Campaign: ad_group_insights_by_ad_format.campaign
-      Advertiser: ad_group_insights_by_ad_format.advertiser
-    row: 141
+    listen: {}
+    row: 125
     col: 12
     width: 12
-    height: 12
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (11)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 139
-    col: 0
-    width: 6
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (12)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 139
-    col: 18
-    width: 6
-    height: 2
+    height: 9
   - title: Detailed YouTube Performance
     name: Detailed YouTube Performance
     explore: line_item_insights
@@ -1250,18 +2483,24 @@
     note_display: above
     note_text: "&nbsp;  <br>"
     listen:
-      Date: line_item_insights.date_date
       Campaign: line_item_insights.campaign
+      Date: line_item_insights.date_date
       Advertiser: line_item_insights.advertiser
-    row: 153
+    row: 134
     col: 0
     width: 24
     height: 10
-  - title: Total Impressions
-    name: Total Impressions
+  - title: New Tile
+    name: New Tile (3)
     explore: campaign_insights
     type: single_value
-    fields: [campaign_insights.sum_of_impressions]
+    fields: [campaign_insights.sum_of_impressions, campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    filters:
+      campaign_insights.advertiser: Canada Market Sportswear Campaigns
+      campaign_insights.campaign: ''
+      campaign_insights.date: ''
     limit: 500
     column_limit: 50
     custom_color_enabled: true
@@ -1276,598 +2515,27 @@
     single_value_title: Total Impressions
     defaults_version: 1
     note_state: collapsed
-    note_display: hover
+    note_display: above
     note_text: Total number of times the ad was served.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 2
+    hidden_fields: [campaign_insights.cpm, campaign_insights.sum_of_trueview_views,
+      campaign_insights.cpv, campaign_insights.trueview_vr, campaign_insights.cpc,
+      campaign_insights.sum_of_clicks, campaign_insights.ctr, campaign_insights.sum_of_spend]
+    listen: {}
+    row: 3
     col: 0
     width: 6
     height: 2
-  - title: Total Clicks
-    name: Total Clicks
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.sum_of_clicks]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total Clicks
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: Total number of clicks on the ad.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 4
-    col: 0
-    width: 6
-    height: 2
-  - title: Total TrueView Views
-    name: Total TrueView Views
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.sum_of_trueview_views]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total TrueView Views
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: The number of times your ad was viewed for a specific duration depending on ad format.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 2
-    col: 11
-    width: 5
-    height: 2
-  - title: Total Spend
-    name: Total Spend
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.sum_of_spend]
-    limit: 500
-    column_limit: 50
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: Total Spend
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: The total cost of media across the campaigns shown.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 4
-    col: 16
-    width: 8
-    height: 2
-  - title: CTR
-    name: CTR
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.ctr]
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CTR
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: The number of clicks on the ad divided by the number of impressions.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 4
-    col: 11
-    width: 5
-    height: 2
-  - title: CPM
-    name: CPM
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.cpm]
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CPM
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: The average cost for 1,000 impressions.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 2
-    col: 6
-    width: 5
-    height: 2
-  - title: CPV
-    name: CPV
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.cpv]
-    limit: 500
-    column_limit: 50
-    dynamic_fields:
-    - category: table_calculation
-      expression: "${campaign_insights.cpv}"
-      label: CPV
-      value_format: 0.000$
-      value_format_name: __custom
-      _kind_hint: measure
-      table_calculation: cpv
-      _type_hint: number
-      is_disabled: true
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CPV
-    value_format: "$0.000"
-    defaults_version: 1
-    hidden_fields:
-    hidden_pivots: {}
-    note_state: collapsed
-    note_display: hover
-    note_text: The average cost per TrueView view.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 2
-    col: 16
-    width: 4
-    height: 2
-  - title: CPC
-    name: CPC
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.cpc]
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: CPC
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: The average cost per click.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 4
-    col: 6
-    width: 5
-    height: 2
-  - title: TrueView VR
-    name: TrueView VR
-    explore: campaign_insights
-    type: single_value
-    fields: [campaign_insights.trueview_vr]
-    limit: 500
-    custom_color_enabled: true
-    show_single_value_title: true
-    show_comparison: false
-    comparison_type: value
-    comparison_reverse_colors: false
-    show_comparison_label: true
-    enable_conditional_formatting: false
-    conditional_formatting_include_totals: false
-    conditional_formatting_include_nulls: false
-    single_value_title: TrueView VR
-    defaults_version: 1
-    note_state: collapsed
-    note_display: hover
-    note_text: The number of TrueView views over the number of impressions.
-    listen:
-      Date: campaign_insights.date
-      Campaign: campaign_insights.campaign
-      Advertiser: campaign_insights.advertiser
-    row: 2
-    col: 20
-    width: 4
-    height: 2
-  - title: Impressions by YouTube Line Item
-    name: Impressions by YouTube Line Item
-    explore: line_item_insights
-    type: looker_column
-    fields: [line_item_insights.line_item, line_item_insights.sum_of_impressions,
-      line_item_insights.cpm, line_item_insights.cpv]
-    filters: {}
-    sorts: [cpv desc]
-    limit: 500
-    column_limit: 50
-    dynamic_fields:
-    - category: table_calculation
-      expression: "${line_item_insights.cpv}"
-      label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
-      _kind_hint: measure
-      table_calculation: cpv
-      _type_hint: number
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: false
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: circle
-    show_value_labels: true
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_impressions,
-            id: line_item_insights.sum_of_impressions, name: Total Impressions}],
-        showLabels: true, showValues: true, maxValue: !!null '', unpinAxis: false,
-        tickDensity: default, tickDensityCustom: 5, type: linear}, {label: !!null '',
-        orientation: right, series: [{axisId: line_item_insights.cpm, id: line_item_insights.cpm,
-            name: CPM}], showLabels: true, showValues: true, maxValue: !!null '',
-        unpinAxis: false, tickDensity: default, tickDensityCustom: 5, type: linear},
-      {label: '', orientation: right, series: [{axisId: cpv, id: cpv, name: CPV}],
-        showLabels: true, showValues: true, maxValue: !!null '', unpinAxis: false,
-        tickDensity: default, type: linear}]
-    x_axis_zoom: true
-    y_axis_zoom: true
-    series_types:
-      line_item_insights.cpm: line
-      line_item_insights.cpv: line
-      cpv: line
-    series_colors:
-      line_item_insights.sum_of_impressions: "#e2f2d7"
-      line_item_insights.cpm: "#9334E6"
-      line_item_insights.cpv: "#7CB342"
-      cpv: "#7CB342"
-    series_labels:
-      line_item_insights.sum_of_impressions: Total Impressions
-      line_item_insights.cpm: CPM
-      line_item_insights.cpv: CPV
-    series_point_styles:
-      line_item_insights.cpm: triangle
-    label_color: ["#737d87", "#9334E6", "#7CB342"]
-    x_axis_label_rotation: 300
-    advanced_vis_config: |-
-      {
-        chart: {},
-        caption: {
-          text: '<h1 style="font-size:1.5em; ">∅ means CPV is not applicable.</h1>'
-        },
-        series: []
-      }
-    defaults_version: 1
-    hidden_fields: [line_item_insights.cpv]
-    note_state: expanded
-    note_display: above
-    note_text: "&nbsp;  <br>"
-    listen:
-      Date: line_item_insights.date_date
-      Campaign: line_item_insights.campaign
-      Advertiser: line_item_insights.advertiser
-    row: 47
+  - name: " (10)"
+    type: text
+    title_text: ''
+    subtitle_text: ''
+    body_text: '[{"type":"p","children":[{"text":"This dashboard only includes data
+      for the \"YouTube & Partners\" and \"Demand Generation\" line item types.","italic":true}]}]'
+    rich_content_json: '{"format":"slate"}'
+    row: 0
     col: 0
     width: 24
-    height: 13
-  - title: TrueView Views by YouTube Line Item
-    name: TrueView Views by YouTube Line Item
-    explore: line_item_insights
-    type: looker_column
-    fields: [line_item_insights.line_item, line_item_insights.sum_of_trueview_views,
-      line_item_insights.trueview_vr, line_item_insights.cpv]
-    filters:
-      line_item_insights.sum_of_trueview_views: ">0"
-    sorts: [line_item_insights.line_item]
-    limit: 500
-    column_limit: 50
-    dynamic_fields:
-    - category: table_calculation
-      expression: "${line_item_insights.cpv}"
-      label: CPV
-      value_format: "$0.000"
-      value_format_name: __custom
-      _kind_hint: measure
-      table_calculation: cpv
-      _type_hint: number
-    x_axis_gridlines: false
-    y_axis_gridlines: true
-    show_view_names: false
-    show_y_axis_labels: true
-    show_y_axis_ticks: true
-    y_axis_tick_density: default
-    y_axis_tick_density_custom: 5
-    show_x_axis_label: false
-    show_x_axis_ticks: true
-    y_axis_scale_mode: linear
-    x_axis_reversed: false
-    y_axis_reversed: false
-    plot_size_by_field: false
-    trellis: ''
-    stacking: ''
-    limit_displayed_rows: false
-    legend_position: center
-    point_style: circle
-    show_value_labels: true
-    label_density: 25
-    x_axis_scale: auto
-    y_axis_combined: true
-    ordering: none
-    show_null_labels: false
-    show_totals_labels: false
-    show_silhouette: false
-    totals_color: "#808080"
-    y_axes: [{label: '', orientation: left, series: [{axisId: line_item_insights.sum_of_trueview_views,
-            id: line_item_insights.sum_of_trueview_views, name: Total TrueView Views}],
-        showLabels: true, showValues: true, maxValue: !!null '', unpinAxis: false,
-        tickDensity: default, type: linear}, {label: !!null '', orientation: right,
-        series: [{axisId: line_item_insights.trueview_vr, id: line_item_insights.trueview_vr,
-            name: TrueView VR}], showLabels: true, showValues: true, unpinAxis: false,
-        tickDensity: default, tickDensityCustom: 5, type: linear}, {label: '', orientation: right,
-        series: [{axisId: cpv, id: cpv, name: CPV}], showLabels: true, showValues: true,
-        maxValue: !!null '', unpinAxis: false, tickDensity: default, type: linear}]
-    x_axis_zoom: true
-    y_axis_zoom: true
-    series_types:
-      line_item_insights.cpv: line
-      line_item_insights.trueview_vr: line
-      cpv: line
-    series_colors:
-      line_item_insights.sum_of_trueviews: "#fcdec8"
-      line_item_insights.cpv: "#7CB342"
-      line_item_insights.vr: "#EA4335"
-      line_item_insights.sum_of_trueview_views: "#fcdec8"
-      line_item_insights.trueview_vr: "#EA4335"
-      cpv: "#7CB342"
-    series_labels:
-      line_item_insights.sum_of_trueviews: Total Views
-      line_item_insights.vr: VR
-      line_item_insights.cpv: CPV
-      line_item_insights.trueview_vr: TrueView VR
-      line_item_insights.sum_of_trueview_views: Total TrueView Views
-    series_point_styles:
-      line_item_insights.trueview_vr: triangle
-    label_color: ["#737d87", "#EA4335", "#7CB342"]
-    x_axis_label_rotation: 300
-    defaults_version: 1
-    hidden_fields: [line_item_insights.cpv]
-    note_state: expanded
-    note_display: above
-    note_text: "&nbsp;  <br>"
-    listen:
-      Date: line_item_insights.date_date
-      Campaign: line_item_insights.campaign
-      Advertiser: line_item_insights.advertiser
-    row: 60
-    col: 0
-    width: 24
-    height: 13
-  - title: YouTube Line Items Timeline
-    name: YouTube Line Items Timeline
-    explore: line_item_insights
-    type: looker_timeline
-    fields: [line_item_insights.line_item, line_item_insights.line_item_start_date,
-      line_item_insights.line_item_end_date]
-    sorts: [line_item_insights.line_item_start_date]
-    limit: 500
-    column_limit: 50
-    groupBars: true
-    labelSize: 9pt
-    showLegend: true
-    color_application:
-      collection_id: 7c56cc21-66e4-41c9-81ce-a60e1c3967b2
-      palette_id: 5d189dfc-4f46-46f3-822b-bfb0b61777b1
-      options:
-        steps: 5
-    valueFormat: dd-mmm-yy
-    advanced_vis_config: |-
-      {
-        chart: {},
-        series: [{}],
-        yAxis: {
-          type: 'datetime',
-          opposite: true,
-          title: {},
-          endOnTick: false,
-          startOnTick: false,
-          labels: {},
-        },
-        tooltip: {
-          animation: false,
-          backgroundColor: 'var(--vis-color-tooltip-background)',
-          borderRadius: 4,
-          borderWidth: 0,
-          followPointer: true,
-          hideDelay: 0,
-          outside: true,
-          padding: 8,
-          pointFormat: '<br/>Line Item: <br/>{point.name}<br/><br/> {point.formattedStart} — {point.formattedEnd}',
-          shadow: false,
-          style: {
-            color: 'white',
-            fontWeight: 400,
-            fontFamily: 'inherit',
-          },
-        },
-      }
-    defaults_version: 1
-    note_state: expanded
-    note_display: above
-    note_text: "&nbsp;  <br>"
-    listen:
-      Date: line_item_insights.date_date
-      Campaign: line_item_insights.campaign
-      Advertiser: line_item_insights.advertiser
-    row: 8
-    col: 0
-    width: 24
-    height: 10
-  - name: "<h2><strong>What was the performance by audience type?"
-    type: text
-    title_text: "<h2><strong>What was the performance by audience type?"
-    subtitle_text: ''
-    body_text: ''
-    row: 124
-    col: 6
-    width: 12
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (13)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 100
-    col: 0
-    width: 6
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (14)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 124
-    col: 18
-    width: 6
-    height: 2
-  - name: "<h2><strong>What was the performance by demographic breakdown?"
-    type: text
-    title_text: "<h2><strong>What was the performance by demographic breakdown?"
-    subtitle_text: ''
-    body_text: ''
-    row: 100
-    col: 6
-    width: 12
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (15)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 124
-    col: 0
-    width: 6
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (16)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 100
-    col: 18
-    width: 6
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (17)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 31
-    col: 0
-    width: 6
-    height: 2
-  - name: "<h2><strong>What was the performance by month?"
-    type: text
-    title_text: "<h2><strong>What was the performance by month?"
-    subtitle_text: ''
-    body_text: ''
-    row: 31
-    col: 6
-    width: 12
-    height: 2
-  - name: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body> (18)
-    type: text
-    title_text: <p style="color:grey;">-------------------------------------------------------------------------------------------------------------</p>
-      </body>
-    subtitle_text: ''
-    body_text: ''
-    row: 31
-    col: 18
-    width: 6
-    height: 2
+    height: 1
   filters:
   - name: Advertiser
     title: Advertiser
