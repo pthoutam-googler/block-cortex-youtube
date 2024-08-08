@@ -1,4 +1,3 @@
----
 - dashboard: dv360_youtube_campaigns_performance_overview
   title: DV360 YouTube campaigns performance overview
   layout: newspaper
